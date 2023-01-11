@@ -2,15 +2,13 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Holder from '../../img/holder.png'
 
+import './DetectiveLife.css'
+
 export default function DetectiveLife(props) {
-    const Styles = {
-        width: "380px",
-        height: '580px',
-        margin: "50px 50px"
-    }
+
     return (
-        <Card className='medium' style={Styles} center>
-            <Card.Img variant="top" src={Holder} height={"350px"} width />
+        <Card className='cart detective-cart' center>
+            <Card.Img className='detective-cart-img rounded' variant="top" src={Holder} />
             <Card.Body>
                 <Card.Title>{props.title}</Card.Title>
                 <Card.Text>

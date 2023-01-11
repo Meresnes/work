@@ -48,25 +48,27 @@ export default function Main() {
 
             </div>
             <div className="main-content">
-                <div className="block">
-                    <div className="left-block">
-                        <img src={DetectivePhoto} height={"550px"} alt="Detective" />
+                <div className="visit-cart-block">
+                    <div className="block">
+                        <div className="left-block">
+                            <img src={DetectivePhoto} height={"550px"} alt="Detective" />
+                        </div>
+                        <div className="right-block">
+                            <div className="title"> Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                            <div className="name">Владимир Петрухин </div>
+                            <Button variant="outline-primary">Подробнее</Button>{' '}
+                        </div>
                     </div>
-                    <div className="right-block">
-                        <div className="title"> Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-                        <div className="name">Владимир Петрухин </div>
-                        <Button variant="outline-primary">Подробнее</Button>{' '}
-                    </div>
-                </div>
 
-                <div className="block">
-                    <div className="right-block">
-                        <div className="title"> Визитная карточка</div>
-                        <div className="name">Lorem ipsum dolor sit amet consectet</div>
-                        <Button variant="outline-primary">Подробнее</Button>{' '}
-                    </div>
-                    <div className="left-block">
-                        <img src={Holder} height={"550px"} alt="Detective" />
+                    <div className="block">
+                        <div className="right-block">
+                            <div className="title"> Визитная карточка</div>
+                            <div className="name">Lorem ipsum dolor sit amet consectet</div>
+                            <Button variant="outline-primary">Подробнее</Button>{' '}
+                        </div>
+                        <div className="left-block">
+                            <img src={Holder} alt="Detective" />
+                        </div>
                     </div>
                 </div>
                 <div className="about-block">
@@ -96,7 +98,7 @@ export default function Main() {
                             </div>
                         </div>
                         <div className="center-block">
-                            <iframe width="760" height="515" src="https://www.youtube.com/embed/jt2m440S3Uk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe src="https://www.youtube.com/embed/jt2m440S3Uk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                         <div className="side-block">
                             <div className="achievement-block">

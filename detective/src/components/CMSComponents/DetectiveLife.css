@@ -1,0 +1,13 @@
+
+.detective-cart{
+    width:400px ;
+    margin: 50px 50px;
+}
+@media screen and (max-width: 1400px) {
+    .detective-cart-img{
+        width: 550px;
+    }
+    .detective-cart{
+        width:600px ;
+    }
+}
