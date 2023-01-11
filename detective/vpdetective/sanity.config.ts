@@ -1,7 +1,6 @@
 import {defineConfig} from 'sanity'
 import {deskTool} from 'sanity/desk'
 import {visionTool} from '@sanity/vision'
-//import {googleMapsInput} from '@sanity/google-maps-input'
 import {schemaTypes} from './schemas'
 
 export default defineConfig({
@@ -11,11 +10,7 @@ export default defineConfig({
   projectId: 'goegwrn0',
   dataset: 'production',
 
-  plugins: [
-    deskTool(),
-    visionTool(),
-    //googleMapsInput(),
-  ],
+  plugins: [deskTool(), visionTool()],
 
   schema: {
     types: schemaTypes,

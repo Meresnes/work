@@ -1,0 +1,186 @@
+.topcontainer__main{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    color: aliceblue;
+    
+}
+.title-block{
+    display: flex;
+    justify-content: right;
+    padding: 10% 15% 0 0;
+
+}
+.title-block>h3{
+    font-size: 60px;
+}
+
+.topcontainer__main::before{
+    z-index: -2;
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-image: url(../img/main-bg.jpg);
+    background-size: cover;
+    opacity: 0.8;
+}
+
+.content-block{
+    width: 100%;
+    height: 800px;
+    position: relative;
+    margin: 150px 40px 0 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+   
+}
+.service-block{
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 35px;
+    width: 300px;
+    height: 200px;
+    margin: 100px 100px 100px 0;
+    border: 1px white solid;
+    border-radius: 3%;
+    
+}
+.main-content{
+    margin-top: 150px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.block{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    justify-content: center;
+
+}
+.left-block>img{
+    border-radius: 5%;
+}
+.right-block{
+    margin-left: 100px;
+    width: 400px;
+}
+.title{
+    font-size: 34px;
+    font-weight: 600;
+}
+.right-block>.name{
+    margin-top: 40px;
+    font-size: 24px;
+    font-weight: 400;
+}
+.right-block>Button{
+    margin-top: 40px;
+    font-size: 24px;
+    
+    color: black;
+    border: 2px solid black; 
+}
+.right-block>Button:hover{
+    background-color:#3D6571;
+    border: 2px solid #3D6571; 
+}
+.about-block{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-block>.title{
+    font-size: 40px;
+    
+}
+.about-block>.main-block{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.main-block>.center-block{
+    margin: 100px;
+}
+.main-block>.side-block{
+    display: flex;
+    flex-direction: column;
+
+}
+.achievement-block{
+    width: 350px;
+    margin-top: 50px;
+}
+.achievement-block>.icon{
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.achievement-title{
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+}
+.achievement-text{
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.life-block{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 0 40% 0 40%;
+    
+}
+.main-life-block{
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tab-inside{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.carousel-inside{
+    position: relative;
+    width: 1800px;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    
+}
+.carousel-block{
+    overflow: hidden;
+}
+.carousel-block>.carousel-item{
+    overflow: hidden;
+    display: flex;  
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+    
+}
