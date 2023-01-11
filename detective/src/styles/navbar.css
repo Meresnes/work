@@ -1,0 +1,25 @@
+.NavbarContent{
+    display: flex;
+    justify-content: space-around ;
+    height: 80px;
+    align-items: center;
+    font-size: 25px;
+}
+header{
+    padding-top: 20px;
+    
+    position: relative;
+    
+    width: 100%;
+    font-size: 26px;
+    z-index: 9;
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+}
+
+.vr{
+    width: 3px;
+    
+}
