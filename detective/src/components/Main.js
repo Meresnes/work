@@ -5,45 +5,73 @@ import DetectiveLife from './CMSComponents/DetectiveLife';
 import Footer from './Footer';
 import DetectivePhoto from "../img/detective-photo.png"
 import Holder from "../img/holder.png"
+import ServiceComponents from './CMSComponents/ServiceComponents';
+import React, { useEffect } from "react"
+import sanityClient from "./client"
 import "../styles/main.css"
 
 export default function Main() {
+    const [serviceData, setServiceData] = React.useState(null)
+    // const [serviceList, setServiceList] = React.useState([])
+    useEffect(() => {
+        sanityClient
+            .fetch(`*[_type == "service"]{
+                title,
+                slug,
+                mainImage{
+                    asset->{
+                        _id,
+                        url
+                    },
+                },
+                body,
+            }`)
+            .then(data => {
+                setServiceData(data)
+            })
+    }, [])
+
 
     return (
         <>
             <div className="topcontainer__main">
+
                 <div className="title-block">
                     <h3>Частный детектив</h3>
                 </div>
+
                 <div className="content-block">
-                    <div className="row">
-                        <div className="service-block col">
-                            Lorem ipsum dolor sit amet
-                        </div>
-                        <div className="service-block col">
-                            Lorem ipsum dolor sit amet
-                        </div>
-                        <div className="service-block col">
-                            Lorem ipsum dolor sit amet
-                        </div>
-                        <div className="service-block col">
-                            Lorem ipsum dolor sit amet
+                    {/* <div className="row">
+                        <div className="col">
+
+                            <div className="service-block col">
+                                Lorem ipsum dolor sit amet
+                            </div>
                         </div>
                     </div>
                     <div className="row">
-                        <div className="service-block col">
-                            Lorem ipsum dolor sit amet
-                        </div>
-                        <div className="service-block col">
-                            Lorem ipsum dolor sit amet
-                        </div>
-                        <div className="service-block col">
-                            Lorem ipsum dolor sit amet
-                        </div>
-                        <div className="service-block col">
-                            Lorem ipsum dolor sit amet
+                        <div className="col">
+                            <div className="service-block col">
+                                Lorem ipsum dolor sit amet
+                            </div>
+                            <div className="service-block col">
+                                Lorem ipsum dolor sit amet
+                            </div>
                         </div>
                     </div>
+                    <div className="row">
+                        <div className="col">
+                            <div className="service-block col">
+                                Lorem ipsum dolor sit amet
+                            </div>
+                            <div className="service-block col">
+                                Lorem ipsum dolor sit amet
+                            </div>
+                        </div>
+                    </div> */}
+                    {serviceData && serviceData.map(item => (
+                        <ServiceComponents key={item.slug.current} data={item} />
+                    ))}
                 </div>
 
             </div>
@@ -72,6 +100,7 @@ export default function Main() {
                     </div>
                 </div>
                 <div className="about-block">
+
                     <div className="title">О нас</div>
                     <div className="main-block">
                         <div className="side-block">
@@ -98,7 +127,7 @@ export default function Main() {
                             </div>
                         </div>
                         <div className="center-block">
-                            <iframe src="https://www.youtube.com/embed/jt2m440S3Uk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe src="https://www.youtube.com/embed/jt2m440S3Uk" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                         </div>
                         <div className="side-block">
                             <div className="achievement-block">
@@ -127,6 +156,7 @@ export default function Main() {
 
                 </div>
             </div>
+
             <div className="life-block block">
                 <div className="title">Жизнь детектива</div>
 

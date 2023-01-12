@@ -1,0 +1,33 @@
+.service-card{
+    position: relative;
+    width: 400px;
+    height: 230px !important;
+    overflow: hidden;  
+    cursor: pointer;
+    
+}
+.card-title-text{
+    font-size: 32px !important;
+    text-shadow: 1px 1px 2px black;
+    transition: all 0.6s;
+    
+}
+.service-image{
+    transition: all 0.6s;
+}
+.card-body-text{
+    text-shadow: 1px 1px 2px black;
+    opacity: 0;
+    font-size: 24px;
+    margin-top: 50px;
+    transition: all 0.4s;
+}
+.visible{
+    opacity: 0.9;
+}
+.shadow{
+    opacity: 0.4;
+}
+.hide{
+    opacity: 0;
+}

@@ -7,7 +7,7 @@ import './DetectiveLife.css'
 export default function DetectiveLife(props) {
 
     return (
-        <Card className='cart detective-cart' center>
+        <Card className='cart detective-cart'>
             <Card.Img className='detective-cart-img rounded' variant="top" src={Holder} />
             <Card.Body>
                 <Card.Title>{props.title}</Card.Title>
