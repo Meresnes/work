@@ -14,10 +14,10 @@ export default function NavBar() {
             <header>
                 <Nav className="navbar flex justify-content-around " activeKey="/">
                     <Nav.Item >
-                        <Nav.Link href="/work">  <img src={LogoImg} alt="logo" width={"350px"} height={"100px"} /> </Nav.Link>
+                        <Nav.Link href="/work/">  <img src={LogoImg} alt="logo" width={"350px"} height={"100px"} /> </Nav.Link>
                     </Nav.Item>
                     <Nav.Item >
-                        <Nav.Link className='nav-text' href="/service">Услуги </Nav.Link>
+                        <Nav.Link className='nav-text' href="/work/service/">Услуги </Nav.Link>
                         {/* Метод show показывает дропдаун , чтобы давать слили нужно прописать класс и !important */}
                     </Nav.Item>
                     <div className="vr"></div>

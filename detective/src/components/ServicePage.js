@@ -4,10 +4,17 @@ import '../styles/Service.css'
 export default function ServicePage(props) {
     return (
         <>
-            <section>
+            <section className="main-section">
                 <div className="main-section-title section-title-text">Услуги Частного Детектива</div>
                 <div className="main-section-text">
-
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Omnis ratione, tempora corporis modi ad rerum ullam laudantium repellendus aliquid odio,
+                    expedita repudiandae dolor libero iure similique reiciendis, ab quas pariatur
+                    accusantium temporibus. Et laboriosam est dolores nemo unde numquam, quasi adipisci,
+                    natus quia nisi magnam fugit distinctio? Deserunt labore corrupti et culpa dicta possimus,
+                    autem natus beatae modi molestias placeat, doloribus consequatur deleniti.
+                    Nobis ullam quam error rerum eveniet repellendus?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis officiis veritatis perspiciatis omnis sequi laudantium nam tempora dolorem mollitia quisquam, harum suscipit cum minima velit aspernatur explicabo consequatur, nemo et ipsam aliquid quam libero in vero architecto. Atque, error ipsum.
                 </div>
             </section>
             {/* Дальше будет вывод компонентов через ЦМС */}
