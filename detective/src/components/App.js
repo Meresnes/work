@@ -1,15 +1,22 @@
 import NavBar from './NavBar';
 import Posts from './Post';
-import Main from './Main';
+import MainPage from './MainPage';
+import Footer from './Footer';
+import ServicePage from './ServicePage';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/App.css';
+import { Routes, Route } from 'react-router-dom'
 
 function App() {
   return (
     <>
       <NavBar />
-      <Main />
+      <Routes>
+        <Route exact path="/work" element={<MainPage />} />
+        <Route exact path="/service" element={<ServicePage />} />
+      </Routes>
       {/* <Posts /> */}
+      <Footer />
     </>
   );
 }

@@ -13,6 +13,7 @@
 }
 .title-block>h3{
     font-size: 60px;
+    text-shadow: 2px 2px 3px black;
 }
 
 .topcontainer__main::before{
@@ -23,9 +24,9 @@
     right: 0px;
     bottom: 0px;
     left: 0px;
-    background-image: url(../img/main-bg.jpg);
+    background-image: url(../img/main-bg2.jpg);
     background-size: cover;
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 .content-block{

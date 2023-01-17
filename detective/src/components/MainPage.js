@@ -2,15 +2,16 @@ import Button from 'react-bootstrap/Button';
 import Carousel from 'react-bootstrap/Carousel';
 import { AiOutlineCheckCircle } from "react-icons/ai";
 import DetectiveLife from './CMSComponents/DetectiveLife';
-import Footer from './Footer';
+
 import DetectivePhoto from "../img/detective-photo.png"
+
 import Holder from "../img/holder.png"
 import ServiceComponents from './CMSComponents/ServiceComponents';
 import React, { useEffect } from "react"
 import sanityClient from "./client"
 import "../styles/main.css"
 
-export default function Main() {
+export default function MainPage() {
     const [serviceData, setServiceData] = React.useState(null)
     // const [serviceList, setServiceList] = React.useState([])
     useEffect(() => {
@@ -188,7 +189,7 @@ export default function Main() {
                 </Carousel>
 
             </div>
-            <Footer />
+
         </>
     )
 } 

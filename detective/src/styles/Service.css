@@ -1,0 +1,20 @@
+section{
+    position: relative;
+    width: 100%;
+    margin-top: 50px;
+}
+.section-title-text{
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 35px;
+}
+.section-content{
+    margin-top: 50px;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+}
+.section-content-services{
+    width: 40%;
+}

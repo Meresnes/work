@@ -11,6 +11,8 @@ header{
     width: 100%;
     font-size: 26px;
     z-index: 9;
+    background: rgb(255,255,255);
+background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(61,101,113,1) 50%, rgba(26,34,52,0.865983893557423) 100%);
 }
 .navbar{
     display: flex;
@@ -35,16 +37,21 @@ header{
               0 0 100px #3D6571;
   } */
   .nav-text{
-    color: black !important;
-    
+    color: white !important;
+    text-shadow: 1px 1px 2px black;
   }
+  .nav-phone-text{
+    color: white !important;
+    text-shadow: 1px 1px 2px black;
+  }
+  
 .nav-text:after {
     content: '';
     position: relative;
     display: inline-block;
     height: 1em;
     width: 100%;
-    border-bottom: 1px solid #3D6571;
+    border-bottom: 1px solid white;
     opacity: 0;
     -webkit-transition: opacity 0.45s, -webkit-transform 0.35s;
     transition: opacity 0.35s, transform 0.35s;
@@ -58,3 +65,4 @@ header{
     -webkit-transform: scale(1);
     transform: scale(1);
   }
+  
