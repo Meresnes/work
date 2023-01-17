@@ -1,7 +1,7 @@
 .service-card{
     position: relative;
     width: 400px;
-    height: 230px !important;
+    height: 210px !important;
     overflow: hidden;  
     cursor: pointer;
     

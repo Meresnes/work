@@ -7,31 +7,12 @@ import DetectivePhoto from "../img/detective-photo.png"
 
 import Holder from "../img/holder.png"
 import ServiceComponents from './CMSComponents/ServiceComponents';
-import React, { useEffect } from "react"
-import sanityClient from "./client"
+
 import "../styles/main.css"
 
-export default function MainPage() {
-    const [serviceData, setServiceData] = React.useState(null)
-    // const [serviceList, setServiceList] = React.useState([])
-    useEffect(() => {
-        sanityClient
-            .fetch(`*[_type == "service"]{
-                title,
-                slug,
-                mainImage{
-                    asset->{
-                        _id,
-                        url
-                    },
-                },
-                body,
-            }`)
-            .then(data => {
-                setServiceData(data)
-            })
-    }, [])
+export default function MainPage(props) {
 
+    const serviceData = props.data
 
     return (
         <>
@@ -70,6 +51,7 @@ export default function MainPage() {
                             </div>
                         </div>
                     </div> */}
+
                     {serviceData && serviceData.map(item => (
                         <ServiceComponents key={item.slug.current} data={item} />
                     ))}

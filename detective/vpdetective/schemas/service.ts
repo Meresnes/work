@@ -7,7 +7,7 @@ export default defineType({
     fields: [
         defineField({
             name: 'title',
-            title: 'Название',
+            title: 'Название услуги',
             type: 'string',
         }),
         defineField({
@@ -20,32 +20,27 @@ export default defineType({
             },
         }),
         defineField({
+            name: 'price',
+            title: 'Цена',
+            type: 'string',
+        }),
+        defineField({
+            name: 'description',
+            title: 'Краткое описание услуги',
+            type: 'text',
+        }),
+        defineField({
+            name: 'body',
+            title: 'Полное описание услуги',
+            type: 'blockContent',
+        }),
+        defineField({
             name: 'mainImage',
-            title: 'Фон карточки',
+            title: 'Картинка услуги',
             type: 'image',
             options: {
                 hotspot: true,
             },
         }),
-        defineField({
-            name: 'categories',
-            title: 'Категории',
-            type: 'array',
-            of: [{ type: 'reference', to: { type: 'category' } }],
-        }),
-        defineField({
-            name: 'body',
-            title: 'Тело поста',
-            type: 'blockContent',
-        }),
     ],
-
-    preview: {
-        select: {
-            title: 'title',
-        },
-        prepare(selection) {
-            return { ...selection }
-        },
-    },
 })

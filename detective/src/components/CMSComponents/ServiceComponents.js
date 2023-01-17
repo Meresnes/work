@@ -5,7 +5,7 @@ import './ServiceComponents.css'
 export default function ServiceComponents(props) {
 
     const imgSrc = props.data.mainImage.asset.url
-    const bodyText = props.data.body[0].children[0].text
+    const bodyText = props.data.body
     const componentLink = props.data.slug.current
     const [isHover, setIsHover] = React.useState(false)
     return (
