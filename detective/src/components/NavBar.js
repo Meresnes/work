@@ -17,8 +17,8 @@ export default function NavBar() {
                         <Nav.Link href="/work/">  <img src={LogoImg} alt="logo" width={"350px"} height={"100px"} /> </Nav.Link>
                     </Nav.Item>
                     <Link to='/work/service/'>
-                        <Nav.Item >
-                            <Nav className='nav-text'>Услуги </Nav>
+                        <Nav.Item className='nav-text' >
+                            <Nav className=''><p>Услуги</p> </Nav>
                             {/* Метод show показывает дропдаун , чтобы давать слили нужно прописать класс и !important */}
                         </Nav.Item>
                     </Link>

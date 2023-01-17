@@ -11,6 +11,7 @@ header{
     width: 100%;
     font-size: 26px;
     z-index: 9;
+    border: black 1px solid;
     background: rgb(255,255,255);
 background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(61,101,113,1) 50%, rgba(26,34,52,0.865983893557423) 100%);
 }
@@ -18,7 +19,9 @@ background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(61,101,113,1) 50
     display: flex;
     justify-content: space-around;
 }
-
+p{
+  margin: 0 !important;
+}
 .vr{
     width: 2px !important;
 }
@@ -38,8 +41,8 @@ background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(61,101,113,1) 50
   } */
   .nav-text{
     color: white !important;
-    text-decoration: none !important;
     text-shadow: 1px 1px 2px black;
+    text-decoration: none;
   }
   .nav-phone-text{
     color: white !important;
