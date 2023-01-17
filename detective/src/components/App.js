@@ -13,7 +13,7 @@ function App() {
       <NavBar />
       <Routes>
         <Route exact path="/work" element={<MainPage />} />
-        <Route exact path="/work/service" element={<ServicePage />} />
+        <Route path="/work/service/" element={<ServicePage />} />
       </Routes>
       {/* <Posts /> */}
       <Footer />

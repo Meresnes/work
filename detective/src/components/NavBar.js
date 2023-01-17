@@ -1,6 +1,6 @@
 import Nav from 'react-bootstrap/Nav';
 import React from 'react';
-
+import { Link } from "react-router-dom";
 import "../styles/navbar.css"
 import LogoImg from "../img/holder.png"
 
@@ -16,10 +16,12 @@ export default function NavBar() {
                     <Nav.Item >
                         <Nav.Link href="/work/">  <img src={LogoImg} alt="logo" width={"350px"} height={"100px"} /> </Nav.Link>
                     </Nav.Item>
-                    <Nav.Item >
-                        <Nav.Link className='nav-text' href="/work/service/">Услуги </Nav.Link>
-                        {/* Метод show показывает дропдаун , чтобы давать слили нужно прописать класс и !important */}
-                    </Nav.Item>
+                    <Link to='/work/service/'>
+                        <Nav.Item >
+                            <Nav className='nav-text'>Услуги </Nav>
+                            {/* Метод show показывает дропдаун , чтобы давать слили нужно прописать класс и !important */}
+                        </Nav.Item>
+                    </Link>
                     <div className="vr"></div>
                     <Nav.Item>
                         <Nav.Link className='nav-text' eventKey="link-1">Жизнь детектива</Nav.Link>
