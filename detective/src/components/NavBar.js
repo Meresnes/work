@@ -13,10 +13,12 @@ export default function NavBar() {
         <>
             <header>
                 <Nav className="navbar flex justify-content-around " activeKey="/">
-                    <Nav.Item >
-                        <Nav.Link href="/work/">  <img src={LogoImg} alt="logo" width={"350px"} height={"100px"} /> </Nav.Link>
-                    </Nav.Item>
-                    <Link to='/service'>
+                    <Link to='/work'>
+                        <Nav.Item >
+                            <Nav>  <img src={LogoImg} alt="logo" width={"350px"} height={"100px"} /> </Nav>
+                        </Nav.Item>
+                    </Link>
+                    <Link to='/work/service'>
                         <Nav.Item className='nav-text' >
                             <Nav className=''><p>Услуги</p> </Nav>
                             {/* Метод show показывает дропдаун , чтобы давать слили нужно прописать класс и !important */}
