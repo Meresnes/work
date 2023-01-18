@@ -1,8 +1,8 @@
 import Button from 'react-bootstrap/Button';
 import Carousel from 'react-bootstrap/Carousel';
 import { AiOutlineCheckCircle } from "react-icons/ai";
-import DetectiveLife from './CMSComponents/DetectiveLife';
 
+import DetectiveLife from './CMSComponents/DetectiveLife';
 import DetectivePhoto from "../img/detective-photo.png"
 
 import Holder from "../img/holder.png"
@@ -13,6 +13,7 @@ import "../styles/main.css"
 export default function MainPage(props) {
 
     const serviceData = props.data
+
 
     return (
         <>
@@ -174,4 +175,4 @@ export default function MainPage(props) {
 
         </>
     )
-} 
+}

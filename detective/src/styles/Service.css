@@ -33,3 +33,6 @@ section{
 .section-content-services{
     width: 40%;
 }
+.reverce{
+    flex-direction: row-reverse;
+}

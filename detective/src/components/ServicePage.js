@@ -1,11 +1,11 @@
 import React from "react";
-import Accordion from 'react-bootstrap/Accordion';
+
 import ServiceSection from "./CMSComponents/ServiceSection";
 import '../styles/Service.css'
 export default function ServicePage(props) {
     const servicePageData = props.data
     return (
-        <> {servicePageData && console.log(servicePageData)}
+        <>
             <section className="main-section">
                 <div className="main-section-title section-title-text">Услуги Частного Детектива</div>
                 <div className="main-section-text">
@@ -18,10 +18,10 @@ export default function ServicePage(props) {
                     консультационные услуги и оказывать помощь в различных юридических и бизнес-вопросах.</div>
             </section>
             {/* Дальше будет вывод компонентов через ЦМС */}
-            {servicePageData && servicePageData.map(item => (
-                <ServiceSection key={item.slug.current} data={item} />
+            {servicePageData && servicePageData.map((item, index) => (
+                <ServiceSection key={item.slug.current} number={index + 1} data={item} />
             ))}
-            <section>
+            {/* <section>
                 <div className="section-title-text">СБОР ИНФОРМАЦИИ</div>
                 <div className="section-content">
                     <div className="section-content-image">
@@ -68,7 +68,7 @@ export default function ServicePage(props) {
                         </Accordion>
                     </div>
                 </div>
-            </section>
+            </section> */}
         </>
     )
 

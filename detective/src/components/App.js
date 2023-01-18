@@ -1,5 +1,5 @@
 import NavBar from './NavBar';
-import Posts from './Post';
+// import Posts from './Post';
 import MainPage from './MainPage';
 import Footer from './Footer';
 import ServicePage from './ServicePage';
@@ -11,11 +11,13 @@ import sanityClient from "./client"
 import '../styles/App.css';
 
 function App() {
-  const [serviceData, setServiceData] = React.useState(null)
+  const [generalService, setGeneralService] = React.useState(null)
+  // const [serviceData, setServiceData] = React.useState(null)
   // const [serviceList, setServiceList] = React.useState([])
   useEffect(() => {
     sanityClient
-      .fetch(`*[_type == "generalService"]{
+      .fetch(`*[_type == "generalService" ]{
+        
                 title,
                 slug,
                 mainImage{
@@ -24,21 +26,52 @@ function App() {
                         url
                     },
                 },
-                categories,
+                categories[]->{
+                  title,
+                  slug,
+                  price,
+                  description,
+                  body,
+                  mainImage{
+                    asset->{
+                      _id,
+                      url,
+                  },
+                  },
+                },
                 body,
                 mainBody,
             }`)
       .then(data => {
-        setServiceData(data)
+        setGeneralService(data)
       })
+    // sanityClient
+    //   .fetch(`*[_type == "service" ]{
+
+    //             title,
+    //             slug,
+    //             price,
+    //             description,
+    //             body,
+    //             _ref,
+    //             mainImage{
+    //                 asset->{
+    //                     _id,
+    //                     url
+    //                 },
+    //             },
+    //         }`)
+    //   .then(data => {
+    //     setServiceData(data)
+    //   })
 
   }, [])
   return (
     <>
       <NavBar />
       <Routes>
-        <Route exact path="/work" element={<MainPage data={serviceData} />} />
-        <Route path="/work/service/" element={<ServicePage data={serviceData} />} />
+        <Route exact path="/work" element={<MainPage data={generalService} />} />
+        <Route exact path="/work/service" element={<ServicePage data={generalService} />} />
       </Routes>
       {/* <Posts /> */}
       <Footer />
