@@ -9,6 +9,7 @@ import React, { useEffect } from "react"
 import sanityClient from "./client"
 import NotFoundPage from './NotFoundPage';
 import '../styles/App.css';
+import Layout from './Layout';
 
 function App() {
   const [generalService, setGeneralService] = React.useState(null)
@@ -68,15 +69,16 @@ function App() {
   }, [])
   return (
     <>
-      <NavBar />
+      {/* <NavBar /> */}
       <Routes>
-
-        <Route exact path="/work" element={<MainPage data={generalService} />} />
-        <Route path="/work/service" element={<ServicePage data={generalService} />} />
-        <Route path="*" element={<NotFoundPage />} />
+        <Route path='/work' element={<Layout />}>
+          <Route index element={<MainPage data={generalService} />} />
+          <Route path="service" element={<ServicePage data={generalService} />} />
+          <Route path="*" element={<NotFoundPage />} />
+        </Route>
       </Routes>
       {/* <Posts /> */}
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }
