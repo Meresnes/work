@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/work/static/css/main.21c31b69.css",
-    "main.js": "/work/static/js/main.058d6481.js",
+    "main.js": "/work/static/js/main.79af9f9e.js",
     "static/media/main-bg2.jpg": "/work/static/media/main-bg2.e3c35982a773eb694a13.jpg",
     "static/media/detective-photo.png": "/work/static/media/detective-photo.93a827617f67e2bc83db.png",
     "index.html": "/work/index.html",
     "main.21c31b69.css.map": "/work/static/css/main.21c31b69.css.map",
-    "main.058d6481.js.map": "/work/static/js/main.058d6481.js.map"
+    "main.79af9f9e.js.map": "/work/static/js/main.79af9f9e.js.map"
   },
   "entrypoints": [
     "static/css/main.21c31b69.css",
-    "static/js/main.058d6481.js"
+    "static/js/main.79af9f9e.js"
   ]
 }
