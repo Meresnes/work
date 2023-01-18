@@ -1,8 +1,8 @@
 import Nav from 'react-bootstrap/Nav';
 import React from 'react';
 import { Link } from "react-router-dom";
-import "../styles/navbar.css"
 import LogoImg from "../img/holder.png"
+import "../styles/Navbar.css"
 
 export default function NavBar() {
     const hideStyle = {

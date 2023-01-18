@@ -1,14 +1,11 @@
 import Button from 'react-bootstrap/Button';
 import Carousel from 'react-bootstrap/Carousel';
 import { AiOutlineCheckCircle } from "react-icons/ai";
-
 import DetectiveLife from './CMSComponents/DetectiveLife';
 import DetectivePhoto from "../img/detective-photo.png"
-
 import Holder from "../img/holder.png"
 import ServiceComponents from './CMSComponents/ServiceComponents';
-
-import "../styles/main.css"
+import "../styles/Main.css"
 
 export default function MainPage(props) {
 

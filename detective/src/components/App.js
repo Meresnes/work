@@ -7,7 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Routes, Route } from 'react-router-dom'
 import React, { useEffect } from "react"
 import sanityClient from "./client"
-
+import NotFoundPage from './NotFoundPage';
 import '../styles/App.css';
 
 function App() {
@@ -70,8 +70,10 @@ function App() {
     <>
       <NavBar />
       <Routes>
+
         <Route exact path="/work" element={<MainPage data={generalService} />} />
         <Route path="/work/service" element={<ServicePage data={generalService} />} />
+        <Route path="*" element={<NotFoundPage />} />
       </Routes>
       {/* <Posts /> */}
       <Footer />
