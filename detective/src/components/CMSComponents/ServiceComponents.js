@@ -10,7 +10,7 @@ export default function ServiceComponents(props) {
     const componentLink = props.data.slug.current
     const [isHover, setIsHover] = React.useState(false)
     return (
-        <Link to={'/work/service'}>
+        <Link to={'/service'}>
             <Card className="bg-dark text-white service-card" onMouseLeave={() => setIsHover(false)} onMouseEnter={() => setIsHover(true)}>
                 <Card.Img className={`service-image ${isHover ? 'shadow' : ''}`} src={imgSrc} alt="Card image" />
                 <Card.ImgOverlay>
