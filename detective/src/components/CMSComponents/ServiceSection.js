@@ -1,5 +1,7 @@
 import React from 'react';
 import Accordion from 'react-bootstrap/Accordion';
+import Button from 'react-bootstrap/Button'
+import { Link } from 'react-router-dom';
 
 export default function ServiceSection(props) {
 
@@ -8,23 +10,36 @@ export default function ServiceSection(props) {
     const categories = props.data.categories
     const number = props.number
 
+
     const accordionItems = categories.map((item, index) => (
         < Accordion.Item eventKey={index} key={item.slug.current} >
-            <Accordion.Header>{item.title}</Accordion.Header>
+            <Accordion.Header>
+                <div className="accordion-title">
+                    {item.title}
+                </div>
+            </Accordion.Header>
             <Accordion.Body>
-                {item.description}
+                <div className="accordion-text">
+                    {item.description}
+                </div>
+                <div className="accordion-button-field"><Link to={`curent-service/${item.slug.current}`}>
+                    <Button className='accordion-link-button' variant='dark' >
+                        Подробнее...
+                    </Button>
+                </Link></div>
+
             </Accordion.Body>
         </Accordion.Item >
 
     ))
-    // console.log(props.number)
+
     return (
         <section>
             {/* {console.log(categories)} */}
             <div className="section-title-text">{title}</div>
-            <div className={`section-content ${(number % 2 == 0) ? 'reverce' : ''}`}>
+            <div className={`section-content ${(number % 2 === 0) ? 'reverce' : ''}`}>
                 <div className="section-content-image">
-                    <img src={imgSrc} alt="" width={"400px"} height={"350px"} />
+                    <img className='section-image' src={imgSrc} alt={props.data.mainImage.asset._id} />
                 </div>
                 <div className="section-content-services">
                     <Accordion >

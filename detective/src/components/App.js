@@ -1,15 +1,14 @@
-import NavBar from './NavBar';
 // import Posts from './Post';
-import MainPage from './MainPage';
-import Footer from './Footer';
-import ServicePage from './ServicePage';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import { Routes, Route } from 'react-router-dom'
 import React, { useEffect } from "react"
 import sanityClient from "./client"
-import NotFoundPage from './NotFoundPage';
-import '../styles/App.css';
 import Layout from './Layout';
+import MainPage from './MainPage';
+import ServicesPage from './ServicesPage';
+import NotFoundPage from './NotFoundPage';
+import SingleServicePage from './SingleServicePage';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '../styles/App.css';
 
 function App() {
   const [generalService, setGeneralService] = React.useState(null)
@@ -73,7 +72,8 @@ function App() {
       <Routes>
         <Route path='/work' element={<Layout />}>
           <Route index element={<MainPage data={generalService} />} />
-          <Route path="service" element={<ServicePage data={generalService} />} />
+          <Route path="service" element={<ServicesPage data={generalService} />} />
+          <Route path={`service/curent-service/:slug`} element={<SingleServicePage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Route>
       </Routes>
