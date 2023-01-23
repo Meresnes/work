@@ -21,13 +21,14 @@ export default function NavBar() {
                     <Link to='/work/service'>
                         <Nav.Item className='nav-text' >
                             <Nav className=''><p>Услуги</p> </Nav>
-                            {/* Метод show показывает дропдаун , чтобы давать слили нужно прописать класс и !important */}
                         </Nav.Item>
                     </Link>
                     <div className="vr"></div>
-                    <Nav.Item>
-                        <Nav.Link className='nav-text' eventKey="link-1">Жизнь детектива</Nav.Link>
-                    </Nav.Item>
+                    <Link to='/work/life'>
+                        <Nav.Item className='nav-text'>
+                            <Nav className=''>Блог детектива</Nav>
+                        </Nav.Item>
+                    </Link>
                     <div className="vr"></div>
                     <Nav.Item>
                         <Nav.Link className='nav-text' eventKey="link-2">Контакты</Nav.Link>

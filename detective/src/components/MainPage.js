@@ -5,13 +5,19 @@ import DetectiveLife from './CMSComponents/DetectiveLife';
 import DetectivePhoto from "../img/detective-photo.png"
 import Holder from "../img/holder.png"
 import ServiceComponents from './CMSComponents/ServiceComponents';
+import React from 'react';
 import "../styles/Main.css"
 
 export default function MainPage(props) {
 
     const serviceData = props.data
+    const detectiveBlogsData = props.blogData
+    const [detectiveBlogsCards, setDetectiveBlogsCards] = React.useState(null)
 
-
+    // detectiveBlogsData.map(item => (
+    //     <DetectiveLife key={item.slug} data={item} />
+    // ))
+    // console.log(detectiveBlogsData[0])
     return (
         <>
             <div className="topcontainer__main">
@@ -21,6 +27,7 @@ export default function MainPage(props) {
                 </div>
 
                 <div className="content-block">
+
                     {/* <div className="row">
                         <div className="col">
 
@@ -139,31 +146,31 @@ export default function MainPage(props) {
             </div>
 
             <div className="life-block block">
-                <div className="title">Жизнь детектива</div>
+                <div className="title">Блог детектива</div>
 
 
                 <Carousel className='carousel-block' variant="dark" interval={null}>
                     <Carousel.Item className='carousel-item'>
                         <div className="carousel-inside">
-                            <DetectiveLife title={'Title 1'} />
-                            <DetectiveLife title={'Title 1.2'} />
-                            <DetectiveLife title={'Title 1.3'} />
+                            {detectiveBlogsData && <DetectiveLife key={detectiveBlogsData[0].slug.current} data={detectiveBlogsData[0]} />}
+                            {detectiveBlogsData && <DetectiveLife key={detectiveBlogsData[1].slug.current} data={detectiveBlogsData[1]} />}
+
                         </div>
                     </Carousel.Item>
 
                     <Carousel.Item className='carousel-item'>
                         <div className="carousel-inside">
-                            <DetectiveLife title={'Title 2'} />
-                            <DetectiveLife title={'Title 2.2'} />
-                            <DetectiveLife title={'Title 2.3'} />
+                            {detectiveBlogsData && <DetectiveLife key={detectiveBlogsData[2].slug.current} data={detectiveBlogsData[2]} />}
+                            {detectiveBlogsData && <DetectiveLife key={detectiveBlogsData[3].slug.current} data={detectiveBlogsData[3]} />}
+
                         </div>
                     </Carousel.Item>
 
                     <Carousel.Item className='carousel-item'>
                         <div className="carousel-inside">
-                            <DetectiveLife title={'Title 3'} />
-                            <DetectiveLife title={'Title 3.2'} />
-                            <DetectiveLife title={'Title 3.3'} />
+                            {detectiveBlogsData && <DetectiveLife key={detectiveBlogsData[4].slug.current} data={detectiveBlogsData[4]} />}
+                            {detectiveBlogsData && <DetectiveLife key={detectiveBlogsData[5].slug.current} data={detectiveBlogsData[5]} />}
+
                         </div>
                     </Carousel.Item>
                 </Carousel>

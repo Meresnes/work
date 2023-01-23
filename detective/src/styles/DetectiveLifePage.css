@@ -1,0 +1,7 @@
+.section-main-block{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+    justify-content: space-around;
+}

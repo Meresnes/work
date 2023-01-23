@@ -2,7 +2,7 @@ import { useParams } from "react-router-dom";
 import React from "react";
 import sanityClient from "./client"
 import SanityBlockContent from "@sanity/block-content-to-react";
-
+import Button from 'react-bootstrap/Button'
 
 export default function SingleServicePage(props) {
     console.log(props)
@@ -36,13 +36,17 @@ export default function SingleServicePage(props) {
         imgUrl = serviceData.mainImage.asset.url
     }
     return (
-        <>{serviceData && console.log(serviceData)}
+        <>
             {serviceData && <section className="main-section">
                 <img className="main-section-img" src={imgUrl} alt={serviceData.mainImage.asset._id} />
                 <div className="main-section-title section-title-text">{serviceData.title}</div>
                 <div className="main-section-text">
                     {/* {serviceData.body[0].children[0].text} */}
                     <SanityBlockContent blocks={serviceData.body} />
+                </div>
+                <div className="main-section-price">
+                    <div className="price-block">Цена от : {serviceData.price}Р </div>
+                    <Button className="section-price-button" >Связаться с нами</Button>
                 </div>
             </section>}
 

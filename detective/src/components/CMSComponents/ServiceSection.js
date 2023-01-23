@@ -23,7 +23,7 @@ export default function ServiceSection(props) {
                     {item.description}
                 </div>
                 <div className="accordion-button-field"><Link to={`curent-service/${item.slug.current}`}>
-                    <Button className='accordion-link-button' variant='dark' >
+                    <Button className='accordion-link-button' >
                         Подробнее...
                     </Button>
                 </Link></div>

@@ -24,7 +24,7 @@
     right: 0px;
     bottom: 0px;
     left: 0px;
-    background-image: url(../img/main-bg2.jpg);
+    background-image: url(../img/main-bg.jpg);
     background-size: cover;
     opacity: 0.9;
 }
@@ -258,7 +258,7 @@
 .carousel-inside{
     position: relative;
     width: 1800px;
-    height: 700px;
+    height: 900px;
     display: flex;
     justify-content: center;
     overflow: hidden;

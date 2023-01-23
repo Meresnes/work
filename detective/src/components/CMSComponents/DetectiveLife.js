@@ -1,22 +1,30 @@
 import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
-import Holder from '../../img/holder.png'
-
+import { Link } from 'react-router-dom';
+import moment from 'moment';
 import './DetectiveLife.css'
 
 export default function DetectiveLife(props) {
-
+    console.log(props.data)
+    const title = props.data.title
+    const description = props.data.description
+    const imgUrl = props.data.mainImage.asset.url
+    const alt = props.data.mainImage.asset._id
+    const slug = props.data.slug.current
+    const date = moment(props.data.publishedAt).format('DD.MM.YYYY');
     return (
-        <Card className='cart detective-cart'>
-            <Card.Img className='detective-cart-img rounded' variant="top" src={Holder} />
-            <Card.Body>
-                <Card.Title>{props.title}</Card.Title>
-                <Card.Text>
-                    Some quick example text to build on the card title and make up the
-                    bulk of the card's content.
-                </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
-            </Card.Body>
-        </Card>
+        <>
+            <div className="blog-card ">
+
+                <img className="card-image" src={imgUrl} alt={alt}></img>
+
+                <div className="blog-card-title">{title}</div>
+                <div className="blog-card-description">{description}</div>
+                <div className="blog-card-footer">
+                    <div className="publish-date">{date}</div> <div className="read-more">
+                        <Link to={`detective-blog/${slug}`}>
+                            <Button className="read-more-button" >Читать дальше</Button></Link></div>
+                </div>
+            </div>
+        </>
     )
 }
