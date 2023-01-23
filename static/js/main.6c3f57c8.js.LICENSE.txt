@@ -102,3 +102,5 @@ object-assign
  * Available under MIT License (MIT)
  * https://github.com/Yaffle/EventSource/
  */
+
+//! moment.js
