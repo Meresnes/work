@@ -1,0 +1,18 @@
+.maps-section{
+    margin-bottom: 0;
+}
+.maps-section>.section-title-text{
+    margin-bottom: 40px;
+}
+.main-contacts-section{
+    display: flex;
+    flex-direction: column;
+}
+.main-contacts-text{
+    font-size: 32px;
+    font-weight: 400;
+    margin: 50px 100px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}

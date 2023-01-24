@@ -12,8 +12,8 @@ export default function DetectivePostPage(props) {
         if (props.data) {
             setCurentData(props.data.filter(item => (item.slug.current === slug)))
         }
-        console.log(curentData)
-    }, [props])
+
+    }, [props, slug])
 
     return (
         <>{curentData && <section className="main-section">

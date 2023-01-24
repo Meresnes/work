@@ -8,7 +8,7 @@ export default function NavBar() {
     const hideStyle = {
         visibility: "hidden",
     }
-    const [show, setShow] = React.useState(false)
+
     return (
         <>
             <header>
@@ -26,13 +26,15 @@ export default function NavBar() {
                     <div className="vr"></div>
                     <Link to='/work/life'>
                         <Nav.Item className='nav-text'>
-                            <Nav className=''>Блог детектива</Nav>
+                            <Nav className=''><p>Блог детектива</p></Nav>
                         </Nav.Item>
                     </Link>
                     <div className="vr"></div>
-                    <Nav.Item>
-                        <Nav.Link className='nav-text' eventKey="link-2">Контакты</Nav.Link>
-                    </Nav.Item>
+                    <Link to='/work/contacts'>
+                        <Nav.Item>
+                            <Nav className='nav-text' eventKey="link-2">Контакты</Nav>
+                        </Nav.Item>
+                    </Link>
                     <div className="vr"></div>
                     <Nav.Item className='nav-phone-text'>+7(921)099-90-07 <Nav.Link className='nav-text' style={hideStyle} ></Nav.Link></Nav.Item>
 

@@ -4,7 +4,7 @@ import moment from 'moment';
 import './DetectiveLife.css'
 
 export default function DetectiveLife(props) {
-    console.log(props.data)
+    const url = props.url
     const title = props.data.title
     const description = props.data.description
     const imgUrl = props.data.mainImage.asset.url
@@ -21,7 +21,7 @@ export default function DetectiveLife(props) {
                 <div className="blog-card-description">{description}</div>
                 <div className="blog-card-footer">
                     <div className="publish-date">{date}</div> <div className="read-more">
-                        <Link to={`detective-blog/${slug}`}>
+                        <Link to={`${url}${slug}`}>
                             <Button className="read-more-button" >Читать дальше</Button></Link></div>
                 </div>
             </div>

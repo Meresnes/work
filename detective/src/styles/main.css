@@ -1,3 +1,6 @@
+div{
+    
+}
 .topcontainer__main{
     position: relative;
     width: 100%;
@@ -8,6 +11,8 @@
 .title-block{
     display: flex;
     justify-content: right;
+    font-style: normal;
+    font-weight: 700;
     padding: 10% 15% 0 0;
 
 }

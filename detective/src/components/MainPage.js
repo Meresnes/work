@@ -6,14 +6,17 @@ import DetectivePhoto from "../img/detective-photo.png"
 import Holder from "../img/holder.png"
 import ServiceComponents from './CMSComponents/ServiceComponents';
 import React from 'react';
+import { YMaps, Map, Placemark, FullscreenControl, ZoomControl } from '@pbe/react-yandex-maps';
 import "../styles/Main.css"
 
 export default function MainPage(props) {
-
+    const defaultState = {
+        center: [59.990994, 30.251872],
+        zoom: 17,
+    };
     const serviceData = props.data
     const detectiveBlogsData = props.blogData
-    const [detectiveBlogsCards, setDetectiveBlogsCards] = React.useState(null)
-
+    const url = '/work/life/detective-blog/'
     // detectiveBlogsData.map(item => (
     //     <DetectiveLife key={item.slug} data={item} />
     // ))
@@ -27,36 +30,6 @@ export default function MainPage(props) {
                 </div>
 
                 <div className="content-block">
-
-                    {/* <div className="row">
-                        <div className="col">
-
-                            <div className="service-block col">
-                                Lorem ipsum dolor sit amet
-                            </div>
-                        </div>
-                    </div>
-                    <div className="row">
-                        <div className="col">
-                            <div className="service-block col">
-                                Lorem ipsum dolor sit amet
-                            </div>
-                            <div className="service-block col">
-                                Lorem ipsum dolor sit amet
-                            </div>
-                        </div>
-                    </div>
-                    <div className="row">
-                        <div className="col">
-                            <div className="service-block col">
-                                Lorem ipsum dolor sit amet
-                            </div>
-                            <div className="service-block col">
-                                Lorem ipsum dolor sit amet
-                            </div>
-                        </div>
-                    </div> */}
-
                     {serviceData && serviceData.map(item => (
                         <ServiceComponents key={item.slug.current} data={item} />
                     ))}
@@ -152,31 +125,45 @@ export default function MainPage(props) {
                 <Carousel className='carousel-block' variant="dark" interval={null}>
                     <Carousel.Item className='carousel-item'>
                         <div className="carousel-inside">
-                            {detectiveBlogsData && <DetectiveLife key={detectiveBlogsData[0].slug.current} data={detectiveBlogsData[0]} />}
-                            {detectiveBlogsData && <DetectiveLife key={detectiveBlogsData[1].slug.current} data={detectiveBlogsData[1]} />}
+                            {detectiveBlogsData && <DetectiveLife key={detectiveBlogsData[0].slug.current} data={detectiveBlogsData[0]} url={url} />}
+                            {detectiveBlogsData && <DetectiveLife key={detectiveBlogsData[1].slug.current} data={detectiveBlogsData[1]} url={url} />}
 
                         </div>
                     </Carousel.Item>
 
                     <Carousel.Item className='carousel-item'>
                         <div className="carousel-inside">
-                            {detectiveBlogsData && <DetectiveLife key={detectiveBlogsData[2].slug.current} data={detectiveBlogsData[2]} />}
-                            {detectiveBlogsData && <DetectiveLife key={detectiveBlogsData[3].slug.current} data={detectiveBlogsData[3]} />}
+                            {detectiveBlogsData && <DetectiveLife key={detectiveBlogsData[2].slug.current} data={detectiveBlogsData[2]} url={url} />}
+                            {detectiveBlogsData && <DetectiveLife key={detectiveBlogsData[3].slug.current} data={detectiveBlogsData[3]} url={url} />}
 
                         </div>
                     </Carousel.Item>
 
                     <Carousel.Item className='carousel-item'>
                         <div className="carousel-inside">
-                            {detectiveBlogsData && <DetectiveLife key={detectiveBlogsData[4].slug.current} data={detectiveBlogsData[4]} />}
-                            {detectiveBlogsData && <DetectiveLife key={detectiveBlogsData[5].slug.current} data={detectiveBlogsData[5]} />}
+                            {detectiveBlogsData && <DetectiveLife key={detectiveBlogsData[4].slug.current} data={detectiveBlogsData[4]} url={url} />}
+                            {detectiveBlogsData && <DetectiveLife key={detectiveBlogsData[5].slug.current} data={detectiveBlogsData[5]} url={url} />}
 
                         </div>
                     </Carousel.Item>
                 </Carousel>
 
             </div>
+            <section className="maps-section">
+                <div className="main-section-title section-title-text">Где мы находимся?</div>
 
+
+                <YMaps>
+                    <Map width={"100%"} height={"500px"} defaultState={defaultState}>
+                        <Placemark geometry={[59.990994, 30.251872]} />
+                        <FullscreenControl />
+                        <ZoomControl options={{ float: "left" }} />
+
+                    </Map>
+                </YMaps>
+
+
+            </section>
         </>
     )
 }

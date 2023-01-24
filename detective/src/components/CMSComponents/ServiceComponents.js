@@ -7,7 +7,7 @@ export default function ServiceComponents(props) {
 
     const imgSrc = props.data.mainImage.asset.url
     const bodyText = props.data.body
-    const componentLink = props.data.slug.current
+    // const componentLink = props.data.slug.current
     const [isHover, setIsHover] = React.useState(false)
     return (
         <Link to='/work/service'>

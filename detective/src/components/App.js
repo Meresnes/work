@@ -9,6 +9,7 @@ import NotFoundPage from './NotFoundPage';
 import SingleServicePage from './SingleServicePage';
 import DetectveLifePage from "./DetectveLifePage"
 import DetectivePostPage from './DetectivePostPage';
+import ContactsPage from './ContactsPage';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/App.css';
 
@@ -68,30 +69,11 @@ function App() {
         setDetectiveBlogs(data)
 
       })
-    // sanityClient
-    //   .fetch(`*[_type == "service" ]{
-
-    //             title,
-    //             slug,
-    //             price,
-    //             description,
-    //             body,
-    //             _ref,
-    //             mainImage{
-    //                 asset->{
-    //                     _id,
-    //                     url
-    //                 },
-    //             },
-    //         }`)
-    //   .then(data => {
-    //     setServiceData(data)
-    //   })
 
   }, [])
   return (
     <>
-      {detectiveBlogs && console.log(detectiveBlogs)}
+
       {/* <NavBar /> */}
       <Routes>
         <Route path='/work' element={<Layout />}>
@@ -100,7 +82,8 @@ function App() {
           <Route path="life" element={<DetectveLifePage data={detectiveBlogs} />} />
           <Route path={`service/curent-service/:slug`} element={<SingleServicePage />} />
           <Route path={`life/detective-blog/:slug`} element={<DetectivePostPage data={detectiveBlogs} />} />
-          <Route path={`detective-blog/:slug`} element={<DetectivePostPage data={detectiveBlogs} />} />
+          <Route path="contacts" element={<ContactsPage />} />
+
           <Route path="*" element={<NotFoundPage />} />
         </Route>
       </Routes>
