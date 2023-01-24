@@ -10,6 +10,7 @@
 .main-contacts-section{
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin-bottom:0 !important;
 }
 .contact-section-image{
@@ -33,11 +34,64 @@
     justify-content: space-evenly;
 }
 .about-us-block{
-    width: 100%;
-    background: #2d2b35;
-    padding: 100px 100px;
+    width:80%;
+    /* background: #2d2b35; */
+    margin-top: 40px;
+    justify-content: space-around;
     display: flex;
     flex-direction: row;
+    overflow: hidden;
+    
+    
+}
+.about-us-block__text>p>a{
+    color: black ;
+    
+}
+.about-us-block__text>p>a:hover{
+    opacity: 0.8;
+    transition: 0.5s all;
+}
+.about-us-left{
+    width: 40%;
+    color: white;
+    background: #2d2b35;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0.9;
+}
+.about-us-right{
+    width: 60%;
+    background: #e2e8e1;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-direction: column;
+    color: black;
+    opacity: 0.9;
+}
+.about-us-right>.about-us-block__text{
+    font-style: italic !important;
+    margin-left: 30px;
+    
+}
+.about-us-right>.about-us-block__text>p{
+    margin-top: 27px !important;
+}
+.about-us-block__social{
+    margin-top: 40px;
+    margin-bottom: 70px;
+    display: flex;
+    flex-direction: row;
+}
+.about-us-block__social>a:hover{
+    transition: 0.8s all ;
+    opacity: 0.7;
+    margin-top: -7px !important;
+}
+.about-us-block__social>a{
+    margin-right: 20px;
 }
 .about-us-block__collum{
     display: flex;
@@ -47,9 +101,10 @@
     color: white;
 }
 .about-us-block__title{
+    margin-top: 70px;
     font-size: 32px;
-    font-weight: 600;
-    text-shadow:2px 3px 3px black;
+    font-weight: 500;
+    
 }
 .about-us-block__text{
     font-size: 24px;
@@ -92,11 +147,20 @@
 }
 .form-submit-btn>.submit-btn{
     background:white ;
-    color: #2d2b35;
+    color: black;
     font-style:normal;
     border: 0;
     height: 50px;
     font-weight: 500;
     font-size: 22px;
+    transition: 0.8s all !important;
+    opacity: 1;
    
+}
+.form-submit-btn>.submit-btn:hover{
+    transition: 0.8s all;
+    background:black;
+    color: white;
+    box-shadow: 8px 8px 15px #130E22;
+    opacity: 1;
 }

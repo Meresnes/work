@@ -6,14 +6,11 @@ import DetectivePhoto from "../img/detective-photo.png"
 import Holder from "../img/holder.png"
 import ServiceComponents from './CMSComponents/ServiceComponents';
 import React from 'react';
-import { YMaps, Map, Placemark, FullscreenControl, ZoomControl } from '@pbe/react-yandex-maps';
+import YandexMap from './YandexMap';
 import "../styles/Main.css"
 
 export default function MainPage(props) {
-    const defaultState = {
-        center: [59.990994, 30.251872],
-        zoom: 17,
-    };
+
     const serviceData = props.data
     const detectiveBlogsData = props.blogData
     const url = '/work/life/detective-blog/'
@@ -153,14 +150,7 @@ export default function MainPage(props) {
                 <div className="main-section-title section-title-text">Где мы находимся?</div>
 
 
-                <YMaps>
-                    <Map width={"100%"} height={"500px"} defaultState={defaultState}>
-                        <Placemark geometry={[59.990994, 30.251872]} />
-                        <FullscreenControl />
-                        <ZoomControl options={{ float: "left" }} />
-
-                    </Map>
-                </YMaps>
+                <YandexMap />
 
 
             </section>

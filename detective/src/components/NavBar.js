@@ -5,9 +5,7 @@ import LogoImg from "../img/holder.png"
 import "../styles/Navbar.css"
 
 export default function NavBar() {
-    const hideStyle = {
-        visibility: "hidden",
-    }
+
 
     return (
         <>
