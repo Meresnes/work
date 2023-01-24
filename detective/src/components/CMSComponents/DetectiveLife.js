@@ -14,7 +14,6 @@ export default function DetectiveLife(props) {
     return (
         <>
             <div className="blog-card ">
-
                 <img className="card-image" src={imgUrl} alt={alt}></img>
 
                 <div className="blog-card-title">{title}</div>

@@ -3,11 +3,14 @@ footer{
     background: linear-gradient(90deg, rgba(45,43,52,1) 0%, rgba(45,43,51,1) 24%, rgba(45,43,52,1) 50%, rgba(45,43,54,1) 81%, rgba(45,43,50,1) 100%);
     position: relative;
     width: 100%;
-    height: 400px;
+    height: 450px !important;
     overflow: hidden;
 }
 .col{
    padding:0px;
+}
+.col{
+    margin-top: 40px !important;
 }
 footer>.row>.col>.title{
     color: white;
@@ -16,11 +19,34 @@ footer>.row>.col>.title{
 }
 footer>.row>.col>.text{
     color: white;
-    font-size: 24px;
-    cursor: pointer;
+    font-size: 18px;
     margin-top: 15px;
 }
-
-.text:hover{
-    color: #f58825;
+.text>a{
+    color: white !important;
+    text-decoration: none !important;
+}
+.text>a:hover{
+    cursor: pointer;
+    transition: 0.3s all;
+    opacity: 0.8;
+}
+.top-border{
+    margin-top: 20px !important;
+    border-top: 2px black solid!important;
+}
+.social-col{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social-col>a{
+    margin-right: 20px;
+    opacity: 0.75;
+    transition: 0.5s ease-out;
+}
+.social-col>a:hover{
+   
+    opacity: 1;
+    margin-top: -7px !important;
 }

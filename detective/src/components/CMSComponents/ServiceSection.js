@@ -12,7 +12,7 @@ export default function ServiceSection(props) {
 
 
     const accordionItems = categories.map((item, index) => (
-        < Accordion.Item eventKey={index} key={item.slug.current} >
+        <Accordion.Item eventKey={index} key={item.slug.current} >
             <Accordion.Header>
                 <div className="accordion-title">
                     {item.title}
@@ -29,13 +29,13 @@ export default function ServiceSection(props) {
                 </Link></div>
 
             </Accordion.Body>
-        </Accordion.Item >
+        </Accordion.Item>
 
     ))
 
     return (
         <section>
-            {/* {console.log(categories)} */}
+
             <div className="section-title-text">{title}</div>
             <div className={`section-content ${(number % 2 === 0) ? 'reverce' : ''}`}>
                 <div className="section-content-image">

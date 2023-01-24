@@ -32,11 +32,11 @@ export default function NavBar() {
                     <div className="vr"></div>
                     <Link to='/work/contacts'>
                         <Nav.Item>
-                            <Nav className='nav-text' eventKey="link-2">Контакты</Nav>
+                            <Nav className='nav-text' eventkey="link-2">Контакты</Nav>
                         </Nav.Item>
                     </Link>
                     <div className="vr"></div>
-                    <Nav.Item className='nav-phone-text'>+7(921)099-90-07 <Nav.Link className='nav-text' style={hideStyle} ></Nav.Link></Nav.Item>
+                    <Nav.Item ><Nav className='phone'><a href={'tel:+79210999007'}>+7(921)099-90-07</a></Nav></Nav.Item>
 
                 </Nav>
 

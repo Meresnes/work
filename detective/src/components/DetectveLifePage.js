@@ -7,7 +7,7 @@ export default function DetectveLifePage(props) {
     return (
         <>
             <section className="main-section">
-                <div className="main-section-title section-title-text">Жизнь Детектива</div>
+                <div className="main-section-title section-title-text">Блог Детектива</div>
                 <div className="section-main-block">
                     {postsData && postsData.map(item => (
                         <DetectiveLife key={item.slug.current} data={item} url={url} />
