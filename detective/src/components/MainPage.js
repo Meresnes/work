@@ -1,9 +1,9 @@
-import Button from 'react-bootstrap/Button';
+// import Button from 'react-bootstrap/Button';
 import Carousel from 'react-bootstrap/Carousel';
-import { AiOutlineCheckCircle } from "react-icons/ai";
+// import { AiOutlineCheckCircle } from "react-icons/ai";
 import DetectiveLife from './CMSComponents/DetectiveLife';
 import DetectivePhoto from "../img/detective-photo.png"
-import Holder from "../img/holder.png"
+// import Holder from "../img/holder.png"
 import LegalityIcon from "../img/zakonnost.png"
 import ProfessionalIcon from "../img/professional.png"
 import PrivacyIcon from "../img/privacy-shield.png"
@@ -67,7 +67,11 @@ export default function MainPage(props) {
 
                 <div className="title">О нас</div>
                 <div className="main-block">
-                    <div className="side-block">
+
+                    <div className="center-block">
+                        <iframe src="https://www.youtube.com/embed/jt2m440S3Uk" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                    </div>
+                    <div className="bottom-block">
                         <div className="achievement-block">
                             <div className="icon">
                                 <img className='icon-block-img' src={LegalityIcon} alt="Legality" />
@@ -94,11 +98,6 @@ export default function MainPage(props) {
                                 гарантируют достижение максимального результата.
                             </div>
                         </div>
-                    </div>
-                    <div className="center-block">
-                        <iframe src="https://www.youtube.com/embed/jt2m440S3Uk" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-                    </div>
-                    <div className="side-block">
                         <div className="achievement-block">
                             <div className="icon">
                                 <img className='icon-block-img' src={PrivacyIcon} alt="Privacy" />
@@ -126,6 +125,25 @@ export default function MainPage(props) {
                             </div>
                         </div>
                     </div>
+                </div>
+                <div className="about-block__description--block">
+                    <div className="image-block">
+                        <img className='detective-img' src={DetectivePhoto} alt="Detective" />
+                    </div>
+                    <div className="text-block">
+                        <div className="title">
+                            Частные сыщики работают там, где вам нужно
+                        </div>
+                        <div className="achievement-text">
+                            <p>Поиск человека — главное направление работы нашего агентства. Сыщики немедленно откликнутся на розыск, так как промедление чревато. Наши детективы найдут человека, где бы он не был.</p>
+                            <p>Сбор информации — мы отыщем всё, независимо от того, под какими замками находится правда.</p>
+                            <p>Семейные дела —  узнаем, какой секрет закрыт в шкафу. Мы выясним весь круг общения и установим образ жизни ваших близких и обеспечим многим другим.</p>
+                            <p>Поддержка бизнеса — мы выясним, является ли партнер или контрагент достаточно достойным и надежным, чтобы позволить вашей компании процветать и безопасно развиваться. Будем пресекать любые незаконные действия, которые идут в сторону бизнеса.</p>
+                            <p>Расследования под ключ —частный детектив проведет расследование в нужной Вам области.</p>
+                            <p>Консультации и рабочие процессы проводятся в условиях полной конфиденциальности.</p>
+                        </div>
+                    </div>
+
                 </div>
 
             </div>

@@ -84,13 +84,14 @@
     .detective-cart{
         width:600px ;
     } */
+    
     .section-main-block{
         width: 100% !important;
     }
     .blog-card{
-        width: 70% !important ;
+        width: 350px !important ;
         height: 500px !important  ;
-        
+        margin-top: 0 !important;
     }
     .card-image{
         max-height: 250px !important;
@@ -99,7 +100,7 @@
     }
     .blog-card-title{
         font-weight: 500 !important;
-        font-size: 24px !important;
+        
         margin: 0 5%;
         
     }

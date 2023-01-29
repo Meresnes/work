@@ -20,12 +20,12 @@ export default function SubmitForm() {
     return (
         <>
             <Form className='contact-us-block__form'>
-                <Form.Group className="mb-3" controlId="formBasicText">
+                <Form.Group className="mb-3 form-field" controlId="formBasicText">
                     <Form.Label>Ваше имя</Form.Label>
                     <Form.Control type="text" value={userName} onChange={e => setUserName(prev => e.target.value)} placeholder="Введите ваше имя *" />
 
                 </Form.Group>
-                <Form.Group className="mb-3" controlId="formBasicEmail">
+                <Form.Group className="mb-3 form-field" controlId="formBasicEmail">
                     <Form.Label>Почта</Form.Label>
                     <Form.Control type="email" value={userEmail} onChange={e => setUserEmail(prev => e.target.value)} placeholder="Введите ваш e-mail" />
                     {/* <Form.Text className="text-muted">
@@ -33,7 +33,7 @@ export default function SubmitForm() {
                                 </Form.Text> */}
                 </Form.Group>
 
-                <Form.Group className="mb-3" controlId="phoneNumber">
+                <Form.Group className="mb-3 form-field" controlId="phoneNumber">
                     <Form.Label>Номер телефона</Form.Label>
                     <InputMask
                         mask="+7 (999) 999-99-99"

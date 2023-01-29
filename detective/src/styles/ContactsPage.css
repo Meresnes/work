@@ -1,7 +1,6 @@
 .maps-section{
     margin:50px 0 0 0;
-    background: #e6e3e3;
-    
+
 }
 
 .main-contacts-section{
@@ -38,6 +37,9 @@
     display: flex;
     flex-direction: row;
     overflow: hidden;
+    
+    border-radius: 15px;
+    box-shadow: #2d2b35 2px 2px 20px;
     
     
 }
@@ -102,6 +104,8 @@
     margin-top: 40px;
     font-size: 24px;
     font-weight: 500;
+    display: flex;
+    align-items: center;
     
 }
 .about-us-block__text{
@@ -162,4 +166,31 @@
     color: white;
     box-shadow: 8px 8px 15px #130E22;
     opacity: 1;
+}
+@media screen and (max-width: 1550px) {
+    .about-us-block{
+        flex-direction: column;
+    }
+    .about-us-left{
+        width: 100%;
+    }
+    .about-us-right{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .form-field{
+        width: 100% !important;
+    }
+    .contact-us-block__form{
+        position: relative;
+        width: 100%;
+    }
+    .submit-btn{
+        height: auto !important;
+    }
+    .about-us-block{
+        width: 100%;
+        border-radius: 0;
+    }
 }

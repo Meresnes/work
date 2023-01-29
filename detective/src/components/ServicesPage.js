@@ -9,7 +9,7 @@ export default function ServicesPage(props) {
     return (
         <>
             <section className="main-section">
-                <div className="main-section-title section-title-text">Услуги Частного Детектива</div>
+                <div className="main-section-title section-title-text title">Услуги Частного Детектива</div>
                 <div className="main-section-text">
                     Услуги частного детектива включают в себя различные виды
                     расследований и отслеживания, которые могут быть проведены

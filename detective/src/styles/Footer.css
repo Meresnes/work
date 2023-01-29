@@ -3,7 +3,7 @@ footer{
     background: linear-gradient(90deg, rgba(45,43,52,1) 0%, rgba(45,43,51,1) 24%, rgba(45,43,52,1) 50%, rgba(45,43,54,1) 81%, rgba(45,43,50,1) 100%);
     position: relative;
     width: 100%;
-    height: 340px !important;
+    height: auto !important;
     overflow: hidden;
 }
 .col{

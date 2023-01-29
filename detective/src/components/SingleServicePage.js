@@ -7,7 +7,7 @@ import SubmitForm from "./SubmitForm";
 import Modal from 'react-bootstrap/Modal';
 
 export default function SingleServicePage(props) {
-    console.log(props)
+    // console.log(props)
     const [serviceData, setServiceData] = React.useState(null)
     const { slug } = useParams()
     const [onShow, setOnShow] = React.useState(false);
@@ -50,7 +50,7 @@ export default function SingleServicePage(props) {
                     <SanityBlockContent blocks={serviceData.body} />
                 </div>
                 <div className="main-section-price">
-                    {(serviceData.price == 0) ? <div className="price-block">Цена: договорная </div> : <div className="price-block">Цена от : {serviceData.price}Р </div>}
+                    {(serviceData.price === "0") ? <div className="price-block">Цена: договорная </div> : <div className="price-block">Цена от : {serviceData.price}Р </div>}
 
                     <Button className="section-price-button" onClick={() => setOnShow(true)} >Связаться с нами</Button>
                 </div>

@@ -1,7 +1,7 @@
 section{
     position: relative;
     width: 100%;
-    margin: 150px 0;
+    margin: 100px 0;
     justify-content: center;
 }
 .main-section{
@@ -54,9 +54,17 @@ p{
 .accordion-title{
     font-size: 18px;
     font-weight: 400;
+    color: white;
+}
+.accordion-item{
+    border: 1px solid #1A1820 !important;
+}
+.accordion-button:not(.collapsed){
+    box-shadow:0px !important;
 }
 .accordion-text{
     font-size: 16px;
+    color: white;
 }
 .section-image{
     max-height:300px ;
@@ -66,6 +74,20 @@ p{
     box-shadow: #302E36 5px 5px 30px ;
     
 }
+.accordion{
+    /* #3f3e47  */
+    --bs-accordion-active-bg: #1A1820 !important;
+    --bs-accordion-bg: #3f3e47 !important ;
+    --bs-accordion-btn-focus-border-color:#302E36 !important;
+    --bs-accordion-active-color:white !important;
+    color: white !important;
+    --bs-accordion-border-color: none !important;
+    --bs-accordion-btn-focus-box-shadow: none !important;
+}
+.accordion-button{
+    color: #302E36 !important;
+    border: 0px !important;
+}
 .accordion-button-field{
     display: flex;
     justify-content: center;
@@ -73,7 +95,7 @@ p{
 }
 .accordion-link-button{
     height:40px !important;
-    background:#4C4954 !important;
+    background:#1A1820 !important;
     font-size: 16px !important;
     border: 0 !important;
     transition: 1s all !important;
@@ -81,8 +103,8 @@ p{
 
 .accordion-link-button:hover{
     transition: 0.5s all !important;
-    color: white !important;
-    background: black !important;
+    color: black !important;
+    background: white !important;
     box-shadow: 3px 3px 3px rgb(45,43,52);; 
     opacity: 0.7;
 }
@@ -108,4 +130,10 @@ p{
     align-items: center;
     justify-content: space-around;
     height: 200px;
+}
+@media screen and (max-width:750px) {
+    .main-section-img{
+        width: 100%;
+        border-radius: 0;
+    }
 }

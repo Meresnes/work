@@ -10,29 +10,27 @@ export default function Footer() {
         <>
             <footer>
                 <div className="row">
-                    <div className="col">
 
-                    </div>
 
-                    <div className="col">
+                    {/* <div className="col">
                         <div className="title">Жизнь детектива</div>
                         <div className="text">Сведине о Детективе</div>
                         <div className="text">Lorem</div>
                         <div className="text">Lorem</div>
                         <div className="text">Lorem</div>
 
-                    </div>
-
+                    </div> */}
+                    <div className="col"></div>
 
                     <div className="col">
                         <div className="title">Контакты</div>
                         <div className="text">Санкт-Петербург, ул. Мебельная д. 1 этаж 2 офис 7</div>
                         <div className="text">Санкт-Петербург, Гражданский проспект 41 к.2 "Академ-Парк"</div>
                         <div className="text"><a href={'mailto:detectiveok@ya.ru'}>detectiveok@ya.ru</a></div>
-                        <div className="text" ><a href={'tel:+79210999007'}>+7(921)099-90-07</a></div>
+                        <div className="text"><a href={'tel:+79210999007'}>+7(921)099-90-07</a></div>
                     </div>
 
-                    <div className="col"></div>
+
                 </div>
                 <div className="row top-border">
                     <div className="col"></div>
