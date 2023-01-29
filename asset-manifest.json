@@ -1,8 +1,12 @@
 {
   "files": {
-    "main.css": "/work/static/css/main.4da10574.css",
-    "main.js": "/work/static/js/main.4d214253.js",
+    "main.css": "/work/static/css/main.389e0af1.css",
+    "main.js": "/work/static/js/main.d37a30ef.js",
+    "static/media/zakonnost.png": "/work/static/media/zakonnost.82dde9ad4352cdc37ad4.png",
     "static/media/main-bg.jpg": "/work/static/media/main-bg.173a3216277df55cf3ac.jpg",
+    "static/media/pack-of-money.png": "/work/static/media/pack-of-money.e9f7e953f2431632cbd5.png",
+    "static/media/professional.png": "/work/static/media/professional.139b117c83a00b90db0b.png",
+    "static/media/privacy-shield.png": "/work/static/media/privacy-shield.2fb2f8244a67dada0d27.png",
     "static/media/detective-photo.png": "/work/static/media/detective-photo.93a827617f67e2bc83db.png",
     "static/media/email.png": "/work/static/media/email.a49e015815e3ac6d2bd3.png",
     "static/media/whatsapp.png": "/work/static/media/whatsapp.1dd8ca2765f1f177ab22.png",
@@ -10,11 +14,11 @@
     "static/media/vk.png": "/work/static/media/vk.2764998f01e0ea6eb7b6.png",
     "static/media/phone-call.png": "/work/static/media/phone-call.00387604a72df1241c24.png",
     "index.html": "/work/index.html",
-    "main.4da10574.css.map": "/work/static/css/main.4da10574.css.map",
-    "main.4d214253.js.map": "/work/static/js/main.4d214253.js.map"
+    "main.389e0af1.css.map": "/work/static/css/main.389e0af1.css.map",
+    "main.d37a30ef.js.map": "/work/static/js/main.d37a30ef.js.map"
   },
   "entrypoints": [
-    "static/css/main.4da10574.css",
-    "static/js/main.4d214253.js"
+    "static/css/main.389e0af1.css",
+    "static/js/main.d37a30ef.js"
   ]
 }
