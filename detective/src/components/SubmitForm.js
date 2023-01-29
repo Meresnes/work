@@ -41,7 +41,7 @@ export default function SubmitForm() {
                         value={userPhoneNumber}
                         onChange={e => setUserPhoneNumber(prev => e.target.value)}
                     >
-                        {(inputProps) => <Form.Control {...inputProps} type="tel" placeholder="Введите номер телефона" />}
+                        {(inputProps) => <Form.Control {...inputProps} type="tel" placeholder="Введите номер телефона" required />}
                     </InputMask>
                 </Form.Group>
                 <div className="form-submit-btn">

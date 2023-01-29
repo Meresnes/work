@@ -50,7 +50,8 @@ export default function SingleServicePage(props) {
                     <SanityBlockContent blocks={serviceData.body} />
                 </div>
                 <div className="main-section-price">
-                    <div className="price-block">Цена от : {serviceData.price}Р </div>
+                    {(serviceData.price == 0) ? <div className="price-block">Цена: договорная </div> : <div className="price-block">Цена от : {serviceData.price}Р </div>}
+
                     <Button className="section-price-button" onClick={() => setOnShow(true)} >Связаться с нами</Button>
                 </div>
             </section>}

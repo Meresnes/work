@@ -28,6 +28,7 @@ export default function Footer() {
                         <div className="title">Контакты</div>
                         <div className="text">Санкт-Петербург, ул. Мебельная д. 1 этаж 2 офис 7</div>
                         <div className="text">Санкт-Петербург, Гражданский проспект 41 к.2 "Академ-Парк"</div>
+                        <div className="text"><a href={'mailto:detectiveok@ya.ru'}>detectiveok@ya.ru</a></div>
                         <div className="text" ><a href={'tel:+79210999007'}>+7(921)099-90-07</a></div>
                     </div>
 

@@ -5,33 +5,37 @@ import { Link } from 'react-router-dom';
 
 export default function ServiceSection(props) {
 
-    const imgSrc = props.data.mainImage.asset.url
-    const title = props.data.title
-    const categories = props.data.categories
-    const number = props.number
+    const imgSrc = props.data.mainImage.asset.url || ' '
+    const title = props.data.title || ' '
+    const categories = props.data.categories || []
+    const number = props.number || ' '
+    let accordionItems = 'Нет категорий'
+    try {
+        accordionItems = categories.map((item, index) => (
+            <Accordion.Item eventKey={index} key={item.slug.current} >
+                <Accordion.Header>
+                    <div className="accordion-title">
+                        {item.title}
+                    </div>
+                </Accordion.Header>
+                <Accordion.Body>
+                    <div className="accordion-text">
+                        {item.description}
+                    </div>
+                    <div className="accordion-button-field"><Link to={`curent-service/${item.slug.current}`}>
+                        <Button className='accordion-link-button' >
+                            Подробнее...
+                        </Button>
+                    </Link></div>
 
+                </Accordion.Body>
+            </Accordion.Item>
 
-    const accordionItems = categories.map((item, index) => (
-        <Accordion.Item eventKey={index} key={item.slug.current} >
-            <Accordion.Header>
-                <div className="accordion-title">
-                    {item.title}
-                </div>
-            </Accordion.Header>
-            <Accordion.Body>
-                <div className="accordion-text">
-                    {item.description}
-                </div>
-                <div className="accordion-button-field"><Link to={`curent-service/${item.slug.current}`}>
-                    <Button className='accordion-link-button' >
-                        Подробнее...
-                    </Button>
-                </Link></div>
+        ))
+    } catch (err) {
+        console.log(err)
 
-            </Accordion.Body>
-        </Accordion.Item>
-
-    ))
+    }
 
     return (
         <section>

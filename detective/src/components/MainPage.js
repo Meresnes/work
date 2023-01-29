@@ -4,6 +4,10 @@ import { AiOutlineCheckCircle } from "react-icons/ai";
 import DetectiveLife from './CMSComponents/DetectiveLife';
 import DetectivePhoto from "../img/detective-photo.png"
 import Holder from "../img/holder.png"
+import LegalityIcon from "../img/zakonnost.png"
+import ProfessionalIcon from "../img/professional.png"
+import PrivacyIcon from "../img/privacy-shield.png"
+import MoneyIcon from "../img/pack-of-money.png"
 import ServiceComponents from './CMSComponents/ServiceComponents';
 import React from 'react';
 import YandexMap from './YandexMap';
@@ -33,7 +37,7 @@ export default function MainPage(props) {
                 </div>
 
             </div>
-            <div className="main-content">
+            {/* <div className="main-content">
                 <div className="visit-cart-block">
                     <div className="block">
                         <div className="left-block">
@@ -57,62 +61,73 @@ export default function MainPage(props) {
                         </div>
                     </div>
                 </div>
-                <div className="about-block">
 
-                    <div className="title">О нас</div>
-                    <div className="main-block">
-                        <div className="side-block">
-                            <div className="achievement-block">
-                                <div className="icon">
-                                    <AiOutlineCheckCircle />
-                                </div>
-                                <div className="achievement-title">Lorem</div>
-                                <div className="achievement-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+            </div> */}
+            <div className="about-block block">
+
+                <div className="title">О нас</div>
+                <div className="main-block">
+                    <div className="side-block">
+                        <div className="achievement-block">
+                            <div className="icon">
+                                <img className='icon-block-img' src={LegalityIcon} alt="Legality" />
                             </div>
-                            <div className="achievement-block">
-                                <div className="icon">
-                                    <AiOutlineCheckCircle />
-                                </div>
-                                <div className="achievement-title">Lorem</div>
-                                <div className="achievement-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-                            </div>
-                            <div className="achievement-block">
-                                <div className="icon">
-                                    <AiOutlineCheckCircle />
-                                </div>
-                                <div className="achievement-title">Lorem</div>
-                                <div className="achievement-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                            <div className="achievement-title">Законность</div>
+                            <div className="achievement-text">
+                                Согласно действующему законодательству осуществляем
+                                свою деятельность при наличии государственной лицензии,
+                                соблюдая ФЗ РФ от 11.03.1992 N 2487-1
+                                «О частной детективной и охранной деятельности»
                             </div>
                         </div>
-                        <div className="center-block">
-                            <iframe src="https://www.youtube.com/embed/jt2m440S3Uk" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-                        </div>
-                        <div className="side-block">
-                            <div className="achievement-block">
-                                <div className="icon">
-                                    <AiOutlineCheckCircle />
-                                </div>
-                                <div className="achievement-title">Lorem</div>
-                                <div className="achievement-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+
+                        <div className="achievement-block">
+                            <div className="icon">
+                                <img className='icon-block-img' src={ProfessionalIcon} alt="Professional" />
                             </div>
-                            <div className="achievement-block">
-                                <div className="icon">
-                                    <AiOutlineCheckCircle />
-                                </div>
-                                <div className="achievement-title">Lorem</div>
-                                <div className="achievement-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-                            </div>
-                            <div className="achievement-block">
-                                <div className="icon">
-                                    <AiOutlineCheckCircle />
-                                </div>
-                                <div className="achievement-title">Lorem</div>
-                                <div className="achievement-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                            <div className="achievement-title">Профессионализм</div>
+                            <div className="achievement-text">
+                                Более 10 летний опыт работы, в правоохранительных
+                                органах и в детективном агентстве, сотни успешных дел,
+                                оперативность выполнении поставленных задач,
+                                ответственный и индивидуальный подход к каждому клиенту
+                                гарантируют достижение максимального результата.
                             </div>
                         </div>
                     </div>
+                    <div className="center-block">
+                        <iframe src="https://www.youtube.com/embed/jt2m440S3Uk" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                    </div>
+                    <div className="side-block">
+                        <div className="achievement-block">
+                            <div className="icon">
+                                <img className='icon-block-img' src={PrivacyIcon} alt="Privacy" />
+                            </div>
+                            <div className="achievement-title">Конфиденциальность</div>
+                            <div className="achievement-text">
+                                Гарантируем полную конфиденциальность.
+                                Полученные в ходе работы данные не подлежат разглашению.
+                                Для сохранения Вашей приватности и репутации весь материал
+                                удаляется после передачи отчета.
+                            </div>
+                        </div>
 
+                        <div className="achievement-block">
+                            <div className="icon">
+                                <img className='icon-block-img' src={MoneyIcon} alt="Money" />
+                            </div>
+                            <div className="achievement-title">Возврат предоплаты</div>
+                            <div className="achievement-text">
+                                Работаем официально с заключением Договора на оказание услуг.
+                                В случаях, в которых не смогли достичь никакого результата
+                                по договоренностям, возвращаем предоплату.
+                                Таким образом, Вы ничем не рискуете и можете быть уверенны
+                                в нашей благонадежности.
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
             </div>
 
             <div className="life-block block">

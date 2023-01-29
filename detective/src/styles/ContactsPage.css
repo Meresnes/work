@@ -1,12 +1,9 @@
 .maps-section{
     margin:50px 0 0 0;
-    
-    
-}
-.maps-section>.section-title-text{
-    margin-bottom: 40px;
+    background: #e6e3e3;
     
 }
+
 .main-contacts-section{
     display: flex;
     flex-direction: column;
@@ -46,6 +43,7 @@
 }
 .about-us-block__text>p>a{
     color: black ;
+    font-weight: 600;
     
 }
 .about-us-block__text>p>a:hover{
@@ -101,13 +99,13 @@
     color: white;
 }
 .about-us-block__title{
-    margin-top: 70px;
-    font-size: 32px;
+    margin-top: 40px;
+    font-size: 24px;
     font-weight: 500;
     
 }
 .about-us-block__text{
-    font-size: 24px;
+    font-size: 16px;
     display: flex;
     flex-direction: column;
 }
@@ -127,17 +125,18 @@
 .contact-us-block__form{
     color: white;
     width: 500px;
-    font-size: 22px ;
+    font-size: 16px ;
     font-weight: 400;
     border: 3px solid #2d2b35;
     background:#2d2b35;
-    border-radius: 3%;
+    overflow: hidden;
+    border-radius: 1%;
     padding: 40px;
 }
 
 .about-us-block__text-img{
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
 }
 .form-submit-btn{
     display: flex;

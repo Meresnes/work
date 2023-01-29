@@ -3,13 +3,13 @@
     justify-content: space-around ;
     height: 80px;
     align-items: center;
-    font-size: 25px;
+    font-size: 24px;
 }
 header{
   padding-top: 20px;
   position: relative;
   width: 100%;
-  font-size: 26px;
+  font-size: 24px;
   
   z-index: 9;
   box-shadow: 0 10px 15px rgb(45,43,52);; 
