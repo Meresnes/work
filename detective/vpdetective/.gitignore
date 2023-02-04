@@ -4,7 +4,8 @@
 node_modules
 /.pnp
 .pnp.js
-
+/.env
+/env
 # Compiled Sanity Studio
 /dist
 
@@ -14,9 +15,8 @@ node_modules
 # Logs
 /logs
 *.log
-.env
-env
 
+/public/
 env.js
 # Coverage directory used by testing tools
 /coverage
