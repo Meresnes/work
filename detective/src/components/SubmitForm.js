@@ -22,12 +22,12 @@ export default function SubmitForm() {
             <Form className='contact-us-block__form'>
                 <Form.Group className="mb-3 form-field" controlId="formBasicText">
                     <Form.Label>Ваше имя</Form.Label>
-                    <Form.Control type="text" value={userName} onChange={e => setUserName(prev => e.target.value)} placeholder="Введите ваше имя *" />
+                    <Form.Control type="text" value={userName} onChange={e => setUserName(prev => e.target.value)} placeholder="Иванов Иван *" />
 
                 </Form.Group>
                 <Form.Group className="mb-3 form-field" controlId="formBasicEmail">
                     <Form.Label>Почта</Form.Label>
-                    <Form.Control type="email" value={userEmail} onChange={e => setUserEmail(prev => e.target.value)} placeholder="Введите ваш e-mail" />
+                    <Form.Control type="email" value={userEmail} onChange={e => setUserEmail(prev => e.target.value)} placeholder="expample@something.ru" />
                     {/* <Form.Text className="text-muted">
                                     We'll never share your email with anyone else.
                                 </Form.Text> */}

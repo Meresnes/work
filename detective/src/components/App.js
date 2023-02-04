@@ -13,7 +13,11 @@ import ContactsPage from './ContactsPage';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/App.css';
 
+
+
+
 function App() {
+
   const [generalService, setGeneralService] = React.useState(null)
   const [detectiveBlogs, setDetectiveBlogs] = React.useState(null)
   // const [serviceData, setServiceData] = React.useState(null)
