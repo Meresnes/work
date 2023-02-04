@@ -7,6 +7,7 @@
 /env
 /.env
 /public/env.js
+
 # testing
 /coverage
 
