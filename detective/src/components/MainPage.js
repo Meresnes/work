@@ -1,5 +1,8 @@
 // import Button from 'react-bootstrap/Button';
 import Carousel from 'react-bootstrap/Carousel';
+import SubmitForm from './SubmitForm';
+import Button from 'react-bootstrap/Button'
+import Modal from 'react-bootstrap/Modal';
 // import { AiOutlineCheckCircle } from "react-icons/ai";
 import DetectiveLife from './CMSComponents/DetectiveLife';
 import DetectivePhoto from "../img/detective-photo.png"
@@ -14,7 +17,7 @@ import YandexMap from './YandexMap';
 import "../styles/Main.css"
 
 export default function MainPage(props) {
-
+    const [onShow, setOnShow] = React.useState(false);
     const serviceData = props.data
     const detectiveBlogsData = props.blogData
     const url = '/work/life/detective-blog/'
@@ -24,6 +27,9 @@ export default function MainPage(props) {
     // console.log(detectiveBlogsData[0])
     return (
         <>
+            <Modal show={onShow} onHide={() => setOnShow(false)}>
+                <SubmitForm />
+            </Modal>
             <div className="topcontainer__main">
 
                 <div className="title-block">
@@ -34,8 +40,11 @@ export default function MainPage(props) {
                     {serviceData && serviceData.map(item => (
                         <ServiceComponents key={item.slug.current} data={item} />
                     ))}
-                </div>
 
+                </div>
+                <div className="button-block">
+                    <Button className="main-page-button" onClick={() => setOnShow(true)} >Связаться с нами</Button>
+                </div>
             </div>
             {/* <div className="main-content">
                 <div className="visit-cart-block">
@@ -64,6 +73,7 @@ export default function MainPage(props) {
 
             </div> */}
             <div className="about-block block">
+
 
                 <div className="title">О нас</div>
                 <div className="main-block">

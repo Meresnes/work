@@ -4,12 +4,13 @@ import vkIcon from '../img/vk.png'
 import tgIcon from '../img/telegram.png'
 import whatsAppIcon from '../img/whatsapp.png'
 import emailIcon from '../img/email.png'
+import LogoImg from "../img/logo1.png"
 
 export default function Footer() {
     return (
         <>
             <footer>
-                <div className="row">
+                <div className="row top-row">
 
 
                     {/* <div className="col">
@@ -20,15 +21,24 @@ export default function Footer() {
                         <div className="text">Lorem</div>
 
                     </div> */}
-                    <div className="col"></div>
-
-                    <div className="col">
+                    <div className="col ">
                         <div className="title">Контакты</div>
                         <div className="text">Санкт-Петербург, ул. Мебельная д. 1 этаж 2 офис 7</div>
                         <div className="text">Санкт-Петербург, Гражданский проспект 41 к.2 "Академ-Парк"</div>
                         <div className="text"><a href={'mailto:detectiveok@ya.ru'}>detectiveok@ya.ru</a></div>
                         <div className="text"><a href={'tel:+79210999007'}>+7(921)099-90-07</a></div>
                     </div>
+                    <div className="col">
+                        <div className="title"></div>
+                        <div className="text"><img src={LogoImg} width={'100px'} alt='logo' /></div>
+                        <div className="text copirated">ЛИЦЕНЗИЯ СЕРИИ ЧД №002603 ВЫДАНА ГУ Росгвардии РОССИИ ПО СПБ И ЛО
+                            © 2019 Центр Независимых Расследований</div>
+                        <div className="text copirated">Все права защищены.
+                            Информация, представленная на сайте, не является публичной офертой.
+                        </div>
+                    </div>
+
+
 
 
                 </div>

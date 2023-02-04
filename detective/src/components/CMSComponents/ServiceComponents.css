@@ -4,7 +4,7 @@
     height: 210px !important;
     overflow: hidden;  
     cursor: pointer;
-    opacity: 0.85;
+    opacity: 0.90;
     
 }
 .card-title-text{
@@ -36,4 +36,11 @@
     /* transition: all 0.4s;
     display: none; */
     opacity: 0;
+}
+@media screen and (max-width: 700px) {
+    .service-card{
+        overflow: hidden !important;
+        width: 300px;
+    height: 150px !important;
+    }
 }

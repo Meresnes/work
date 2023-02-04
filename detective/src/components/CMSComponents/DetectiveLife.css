@@ -73,7 +73,6 @@
     }
     .read-more>a>.read-more-button{
         font-size: 14px !important;
-        height: 35px !important;
         transition: 1s all !important;
     }
 }
@@ -114,9 +113,13 @@
     }
     .read-more>a>.read-more-button{
         font-size: 14px !important;
-        height: 35px !important;
+        
         transition: 1s all !important;
     }
+    .section-price-button{
+        height: 90px !important;
+    }
+    
 }
 @media screen and (min-width: 1401px) {
     .blog-card{
@@ -181,12 +184,16 @@
     font-size: 16px  !important;
     background:#4C4954 !important;
     border: 0 !important;
-    height: 50px;
+    height: auto !important;
     transition: 1s all !important;
 }
+
 .read-more-button:hover{
     transition: 0.5s all !important;
     background: black !important;
     box-shadow: 3px 3px 3px rgb(45,43,52);; 
     opacity: 0.7;
+}
+@media screen and (max-width: 600px) {
+    
 }

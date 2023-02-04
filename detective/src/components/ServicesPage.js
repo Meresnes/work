@@ -5,7 +5,9 @@ import '../styles/Service.css'
 
 
 export default function ServicesPage(props) {
-    const servicePageData = props.data
+    const servicePageData = React.useMemo(() => {
+        return props.data
+    }, [props.data])
     return (
         <>
             <section className="main-section">
