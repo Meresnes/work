@@ -4,6 +4,7 @@ import '../styles/DetectiveLifePage.css'
 export default function DetectveLifePage(props) {
     const postsData = props.data
     const url = 'detective-blog/'
+
     return (
         <>
             <section className="main-section">
