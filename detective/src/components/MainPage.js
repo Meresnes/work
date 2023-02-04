@@ -1,4 +1,5 @@
-// import Button from 'react-bootstrap/Button';
+import React from 'react';
+import YouTube from "react-youtube";
 import Carousel from 'react-bootstrap/Carousel';
 import SubmitForm from './SubmitForm';
 import Button from 'react-bootstrap/Button'
@@ -12,7 +13,6 @@ import ProfessionalIcon from "../img/professional.png"
 import PrivacyIcon from "../img/privacy-shield.png"
 import MoneyIcon from "../img/pack-of-money.png"
 import ServiceComponents from './CMSComponents/ServiceComponents';
-import React from 'react';
 import YandexMap from './YandexMap';
 import "../styles/Main.css"
 
@@ -21,10 +21,30 @@ export default function MainPage(props) {
     const serviceData = props.data
     const detectiveBlogsData = props.blogData
     const url = '/work/life/detective-blog/'
+    const opts = {
+        height: "490",
+        width: "740",
+        playerVars: {
+            autoplay: 1
+        }
+    }
     // detectiveBlogsData.map(item => (
     //     <DetectiveLife key={item.slug} data={item} />
     // ))
     // console.log(detectiveBlogsData[0])
+
+    // const src = "https://www.youtube.com/embed/jt2m440S3Uk"
+    // const iFrameSrc = ({ src }) => {
+    //     const iframeRef = React.useMemo(() => {
+    //         return "https://www.youtube.com/embed/jt2m440S3Uk";
+    //     }, [src]);
+    // }
+    // const videoId = "jt2m440S3Uk"
+    // const MyIframe = ({ videoId }) => {
+    //     const src = React.useMemo(() => {
+    //         return `https://www.youtube.com/embed/${videoId}`;
+    //     }, [videoId]);
+    // }
     return (
         <>
             <Modal show={onShow} onHide={() => setOnShow(false)}>
@@ -79,7 +99,9 @@ export default function MainPage(props) {
                 <div className="main-block">
 
                     <div className="center-block">
-                        <iframe src="https://www.youtube.com/embed/jt2m440S3Uk" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                        {/* <iframe src={"https://www.youtube.com/embed/jt2m440S3Uk"} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe> */}
+                        <YouTube className='video-player' videoId="jt2m440S3Uk"
+                            opts={opts} />
                     </div>
                     <div className="bottom-block">
                         <div className="achievement-block">
