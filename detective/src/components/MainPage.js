@@ -25,7 +25,7 @@ export default function MainPage(props) {
         height: "490",
         width: "740",
         playerVars: {
-            autoplay: 1
+            autoplay: 0
         }
     }
     // detectiveBlogsData.map(item => (
