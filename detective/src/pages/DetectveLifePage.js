@@ -1,5 +1,5 @@
 import React from "react"
-import DetectiveLife from "./CMSComponents/DetectiveLife"
+import DetectiveLife from "../components/CMSComponents/DetectiveLife"
 import '../styles/DetectiveLifePage.css'
 export default function DetectveLifePage(props) {
     const postsData = props.data

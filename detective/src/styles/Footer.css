@@ -7,9 +7,7 @@ footer{
     overflow: hidden;
     margin-top: 20px;
 }
-.col{
-   margin-top:10px;
-}
+
 .top-col{
     margin: 10px 0 0 100px  !important;
 }
@@ -49,11 +47,13 @@ footer>.row>.col>.copirated{
     border-top: 1px gray solid!important;
 }
 .social-col{
+    
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .social-col>a{
+    padding-top: 15px ;
     margin-right: 20px;
     opacity: 0.75;
     transition: 0.5s ease-out;

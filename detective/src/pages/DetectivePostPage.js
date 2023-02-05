@@ -2,7 +2,7 @@ import React from "react"
 import { useParams } from "react-router-dom";
 import Button from 'react-bootstrap/Button'
 import SanityBlockContent from "@sanity/block-content-to-react";
-import SubmitForm from "./SubmitForm";
+import SubmitForm from "../components/SubmitForm";
 import Modal from 'react-bootstrap/Modal';
 
 export default function DetectivePostPage(props) {

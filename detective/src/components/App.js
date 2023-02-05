@@ -3,13 +3,13 @@ import { Routes, Route } from 'react-router-dom'
 import React, { useEffect } from "react"
 import sanityClient from "./client"
 import Layout from './Layout';
-import MainPage from './MainPage';
-import ServicesPage from './ServicesPage';
-import NotFoundPage from './NotFoundPage';
-import SingleServicePage from './SingleServicePage';
-import DetectveLifePage from "./DetectveLifePage"
-import DetectivePostPage from './DetectivePostPage';
-import ContactsPage from './ContactsPage';
+import MainPage from '../pages/MainPage';
+import ServicesPage from '../pages/ServicesPage';
+import NotFoundPage from '../pages/NotFoundPage';
+import SingleServicePage from '../pages/SingleServicePage';
+import DetectveLifePage from "../pages/DetectveLifePage"
+import DetectivePostPage from '../pages/DetectivePostPage';
+import ContactsPage from '../pages/ContactsPage';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/App.css';
 

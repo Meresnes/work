@@ -1,9 +1,9 @@
-import { useParams } from "react-router-dom";
 import React from "react";
-import sanityClient from "./client"
+import { useParams } from "react-router-dom";
 import SanityBlockContent from "@sanity/block-content-to-react";
+import sanityClient from "../components/client"
+import SubmitForm from "../components/SubmitForm";
 import Button from 'react-bootstrap/Button'
-import SubmitForm from "./SubmitForm";
 import Modal from 'react-bootstrap/Modal';
 
 export default function SingleServicePage(props) {

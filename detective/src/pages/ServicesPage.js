@@ -1,7 +1,7 @@
 import React from "react";
 
-import ServiceSection from "./CMSComponents/ServiceSection";
-import '../styles/Service.css'
+import ServiceSection from "../components/CMSComponents/ServiceSection";
+import '../styles/ServicePage.css'
 
 
 export default function ServicesPage(props) {

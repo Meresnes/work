@@ -1,20 +1,18 @@
 import React from 'react';
 import YouTube from "react-youtube";
 import Carousel from 'react-bootstrap/Carousel';
-import SubmitForm from './SubmitForm';
+import SubmitForm from '../components/SubmitForm';
+import YandexMap from '../components/YandexMap';
+import DetectiveLife from '../components/CMSComponents/DetectiveLife';
+import ServiceComponents from '../components/CMSComponents/ServiceComponents';
 import Button from 'react-bootstrap/Button'
 import Modal from 'react-bootstrap/Modal';
-// import { AiOutlineCheckCircle } from "react-icons/ai";
-import DetectiveLife from './CMSComponents/DetectiveLife';
 import DetectivePhoto from "../img/detective-photo.jpg"
-// import Holder from "../img/holder.png"
 import LegalityIcon from "../img/zakonnost.png"
 import ProfessionalIcon from "../img/professional.png"
 import PrivacyIcon from "../img/privacy-shield.png"
 import MoneyIcon from "../img/pack-of-money.png"
-import ServiceComponents from './CMSComponents/ServiceComponents';
-import YandexMap from './YandexMap';
-import "../styles/Main.css"
+import "../styles/MainPage.css"
 
 export default function MainPage(props) {
     const [onShow, setOnShow] = React.useState(false);
