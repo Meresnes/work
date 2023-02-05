@@ -23,8 +23,9 @@ function App() {
   // const [serviceData, setServiceData] = React.useState(null)
   // const [serviceList, setServiceList] = React.useState([])
   useEffect(() => {
-    sanityClient
-      .fetch(`*[_type == "generalService" ]{
+    async function fetchData() {
+      sanityClient
+        .fetch(`*[_type == "generalService" ]{
         
                 title,
                 slug,
@@ -50,11 +51,11 @@ function App() {
                 body,
                 mainBody,
             }`)
-      .then(data => {
-        setGeneralService(data)
-      })
-    sanityClient
-      .fetch(`*[_type == "detectiveBlog" ]{
+        .then(data => {
+          setGeneralService(data)
+        })
+      sanityClient
+        .fetch(`*[_type == "detectiveBlog" ]{
         
                 title,
                 slug,
@@ -69,11 +70,14 @@ function App() {
                 },
                 
             }`)
-      .then(data => {
-        setDetectiveBlogs(data)
+        .then(data => {
+          setDetectiveBlogs(data)
 
-      })
+        })
 
+
+    }
+    fetchData()
   }, [])
   return (
     <>

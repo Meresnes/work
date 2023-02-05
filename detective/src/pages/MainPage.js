@@ -1,5 +1,5 @@
 import React from 'react';
-import YouTube from "react-youtube";
+
 import Carousel from 'react-bootstrap/Carousel';
 import SubmitForm from '../components/SubmitForm';
 import YandexMap from '../components/YandexMap';
@@ -19,13 +19,7 @@ export default function MainPage(props) {
     const serviceData = props.data
     const detectiveBlogsData = props.blogData
     const url = '/work/life/detective-blog/'
-    const opts = {
-        height: "490",
-        width: "740",
-        playerVars: {
-            autoplay: 0
-        }
-    }
+
     // detectiveBlogsData.map(item => (
     //     <DetectiveLife key={item.slug} data={item} />
     // ))
@@ -97,9 +91,9 @@ export default function MainPage(props) {
                 <div className="main-block">
 
                     <div className="center-block">
-                        {/* <iframe src={"https://www.youtube.com/embed/jt2m440S3Uk"} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe> */}
-                        <YouTube className='video-player' videoId="jt2m440S3Uk"
-                            opts={opts} />
+                        <iframe className='video-player' src={"https://www.youtube.com/embed/jt2m440S3Uk"} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                        {/* <YouTube className='video-player' videoId="jt2m440S3Uk"
+                            opts={opts} /> */}
                     </div>
                     <div className="bottom-block">
                         <div className="achievement-block">
