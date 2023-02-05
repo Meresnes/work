@@ -1,25 +1,20 @@
 {
   "files": {
-    "main.css": "/work/static/css/main.2e357d99.css",
-    "main.js": "/work/static/js/main.4b62e570.js",
-    "static/media/zakonnost.png": "/work/static/media/zakonnost.82dde9ad4352cdc37ad4.png",
-    "static/media/pack-of-money.png": "/work/static/media/pack-of-money.e9f7e953f2431632cbd5.png",
-    "static/media/professional.png": "/work/static/media/professional.139b117c83a00b90db0b.png",
-    "static/media/privacy-shield.png": "/work/static/media/privacy-shield.2fb2f8244a67dada0d27.png",
-    "static/media/main-bg2.jpg": "/work/static/media/main-bg2.e3c35982a773eb694a13.jpg",
-    "static/media/detective-photo.png": "/work/static/media/detective-photo.93a827617f67e2bc83db.png",
-    "static/media/logo1.png": "/work/static/media/logo1.892d09ad4f2c11704f5e.png",
-    "static/media/email.png": "/work/static/media/email.a49e015815e3ac6d2bd3.png",
-    "static/media/whatsapp.png": "/work/static/media/whatsapp.1dd8ca2765f1f177ab22.png",
-    "static/media/clock.png": "/work/static/media/clock.ea629724e6525cac0186.png",
-    "static/media/vk.png": "/work/static/media/vk.2764998f01e0ea6eb7b6.png",
-    "static/media/phone-call.png": "/work/static/media/phone-call.00387604a72df1241c24.png",
+    "main.css": "/work/static/css/main.d3cd59d0.css",
+    "main.js": "/work/static/js/main.686d8681.js",
+    "static/media/main-bg2.jpg": "/work/static/media/main-bg2.48e306be334c5e255a83.jpg",
+    "static/media/privacy-shield.png": "/work/static/media/privacy-shield.c61821809fe2a7d0a2b1.png",
+    "static/media/detective-photo.jpg": "/work/static/media/detective-photo.27254f894a4af2838aec.jpg",
+    "static/media/professional.png": "/work/static/media/professional.2a7e5596ff7ddd57fd08.png",
+    "static/media/zakonnost.png": "/work/static/media/zakonnost.614ca8d4a3270d23ada1.png",
+    "static/media/pack-of-money.png": "/work/static/media/pack-of-money.cd2fbde0a040f332796b.png",
+    "static/media/logo1.png": "/work/static/media/logo1.431061e8fb6ed0553df7.png",
     "index.html": "/work/index.html",
-    "main.2e357d99.css.map": "/work/static/css/main.2e357d99.css.map",
-    "main.4b62e570.js.map": "/work/static/js/main.4b62e570.js.map"
+    "main.d3cd59d0.css.map": "/work/static/css/main.d3cd59d0.css.map",
+    "main.686d8681.js.map": "/work/static/js/main.686d8681.js.map"
   },
   "entrypoints": [
-    "static/css/main.2e357d99.css",
-    "static/js/main.4b62e570.js"
+    "static/css/main.d3cd59d0.css",
+    "static/js/main.686d8681.js"
   ]
 }
