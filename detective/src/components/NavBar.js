@@ -7,8 +7,8 @@ import LogoImg from "../img/logo1.png"
 import "../styles/Navbar.css"
 
 export default function NavBar() {
-    const [show, setShow] = React.useState(false);
 
+    const [show, setShow] = React.useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 

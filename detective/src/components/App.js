@@ -80,6 +80,7 @@ function App() {
 
       {/* <NavBar /> */}
       <Routes>
+
         <Route path='/work' element={<Layout />}>
           <Route index element={<MainPage data={generalService} blogData={detectiveBlogs} />} />
           <Route path="service" element={<ServicesPage data={generalService} />} />
@@ -87,9 +88,9 @@ function App() {
           <Route path={`service/curent-service/:slug`} element={<SingleServicePage />} />
           <Route path={`life/detective-blog/:slug`} element={<DetectivePostPage data={detectiveBlogs} />} />
           <Route path="contacts" element={<ContactsPage />} />
-
           <Route path="*" element={<NotFoundPage />} />
         </Route>
+
       </Routes>
       {/* <Posts /> */}
       {/* <Footer /> */}
