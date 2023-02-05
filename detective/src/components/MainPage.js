@@ -6,7 +6,7 @@ import Button from 'react-bootstrap/Button'
 import Modal from 'react-bootstrap/Modal';
 // import { AiOutlineCheckCircle } from "react-icons/ai";
 import DetectiveLife from './CMSComponents/DetectiveLife';
-import DetectivePhoto from "../img/detective-photo.png"
+import DetectivePhoto from "../img/detective-photo.jpg"
 // import Holder from "../img/holder.png"
 import LegalityIcon from "../img/zakonnost.png"
 import ProfessionalIcon from "../img/professional.png"
@@ -106,7 +106,7 @@ export default function MainPage(props) {
                     <div className="bottom-block">
                         <div className="achievement-block">
                             <div className="icon">
-                                <img className='icon-block-img' src={LegalityIcon} alt="Legality" />
+                                <img className='icon-block-img' src={LegalityIcon} alt="Легальность" />
                             </div>
                             <div className="achievement-title">Законность</div>
                             <div className="achievement-text">
@@ -119,7 +119,7 @@ export default function MainPage(props) {
 
                         <div className="achievement-block">
                             <div className="icon">
-                                <img className='icon-block-img' src={ProfessionalIcon} alt="Professional" />
+                                <img className='icon-block-img' src={ProfessionalIcon} alt="Профессионализм" />
                             </div>
                             <div className="achievement-title">Профессионализм</div>
                             <div className="achievement-text">
@@ -132,7 +132,7 @@ export default function MainPage(props) {
                         </div>
                         <div className="achievement-block">
                             <div className="icon">
-                                <img className='icon-block-img' src={PrivacyIcon} alt="Privacy" />
+                                <img className='icon-block-img' src={PrivacyIcon} alt="Конфиденциальность" />
                             </div>
                             <div className="achievement-title">Конфиденциальность</div>
                             <div className="achievement-text">
@@ -145,7 +145,7 @@ export default function MainPage(props) {
 
                         <div className="achievement-block">
                             <div className="icon">
-                                <img className='icon-block-img' src={MoneyIcon} alt="Money" />
+                                <img className='icon-block-img' src={MoneyIcon} alt="Возврат_предоплаты" />
                             </div>
                             <div className="achievement-title">Возврат предоплаты</div>
                             <div className="achievement-text">
@@ -160,7 +160,7 @@ export default function MainPage(props) {
                 </div>
                 <div className="about-block__description--block">
                     <div className="image-block">
-                        <img className='detective-img' src={DetectivePhoto} alt="Detective" />
+                        <img className='detective-img' src={DetectivePhoto} alt="Детектив" />
                     </div>
                     <div className="text-block">
                         <div className="title">
