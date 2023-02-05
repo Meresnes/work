@@ -1,10 +1,10 @@
 import React from "react";
-import '../styles/Footer.css'
-import vkIcon from '../img/vk.png'
-import tgIcon from '../img/telegram.png'
-import whatsAppIcon from '../img/whatsapp.png'
-import emailIcon from '../img/email.png'
-import LogoImg from "../img/logo1.png"
+import vkIcon from '../img/vk.png';
+import tgIcon from '../img/telegram.png';
+import whatsAppIcon from '../img/whatsapp.png';
+import emailIcon from '../img/email.png';
+import LogoImg from "../img/logo1.png";
+import '../styles/Footer.css';
 
 export default function Footer() {
     return (
