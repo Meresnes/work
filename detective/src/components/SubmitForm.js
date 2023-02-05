@@ -1,13 +1,13 @@
-import React from 'react';
+import { useState } from 'react';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import InputMask from 'react-input-mask';
 
 
 export default function SubmitForm() {
-    const [userName, setUserName] = React.useState('')
-    const [userEmail, setUserEmail] = React.useState('')
-    const [userPhoneNumber, setUserPhoneNumber] = React.useState('+7')
+    const [userName, setUserName] = useState('')
+    const [userEmail, setUserEmail] = useState('')
+    const [userPhoneNumber, setUserPhoneNumber] = useState('+7')
 
     const submitHandler = () => {
         if (userName.length > 1 && userPhoneNumber.length === 18) {

@@ -1,12 +1,14 @@
 import { YMaps, Map, Placemark, FullscreenControl, ZoomControl } from '@pbe/react-yandex-maps';
-
+import React from 'react';
 export default function YandexMap() {
+
     const defaultState = {
         center: [59.990994, 30.251872],
         zoom: 15,
         controls: [],
         ZoomControl: false,
     };
+
     return (
         <>
             <YMaps>

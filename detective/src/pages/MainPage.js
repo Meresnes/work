@@ -1,8 +1,7 @@
-import React from 'react';
-
+import { useState, useEffect } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import SubmitForm from '../components/SubmitForm';
-import YandexMap from '../components/YandexMap';
+// import YandexMap from '../components/YandexMap';
 import DetectiveLife from '../components/CMSComponents/DetectiveLife';
 import ServiceComponents from '../components/CMSComponents/ServiceComponents';
 import Button from 'react-bootstrap/Button'
@@ -14,8 +13,25 @@ import PrivacyIcon from "../img/privacy-shield.png"
 import MoneyIcon from "../img/pack-of-money.png"
 import "../styles/MainPage.css"
 
+const YandexMapComponent = () => {
+    const [YandexMap, setYandexMap] = useState(null);
+
+    useEffect(() => {
+        import('../components/YandexMap').then(mod => {
+            setYandexMap(mod.default);
+        });
+    }, []);
+
+    if (!YandexMap) {
+        return <div>Loading...</div>;
+    }
+
+    return YandexMap;
+}
+
+
 export default function MainPage(props) {
-    const [onShow, setOnShow] = React.useState(false);
+    const [onShow, setOnShow] = useState(false);
     const serviceData = props.data
     const detectiveBlogsData = props.blogData
     const url = '/work/life/detective-blog/'
@@ -42,6 +58,7 @@ export default function MainPage(props) {
             <Modal show={onShow} onHide={() => setOnShow(false)}>
                 <SubmitForm />
             </Modal>
+
             <div className="topcontainer__main">
 
                 <div className="title-block">
@@ -207,7 +224,7 @@ export default function MainPage(props) {
                 <div className="main-section-title section-title-text">Где мы находимся?</div>
 
 
-                <YandexMap />
+                {YandexMapComponent()}
 
 
             </section>
