@@ -87,14 +87,18 @@ function App() {
             index
             element={
               <MemoMainPage
-                data={useMemo(() => generalService, [])}
-                blogData={useMemo(() => detectiveBlogs, [])}
+                data={useMemo(() => generalService, [generalService])}
+                blogData={useMemo(() => detectiveBlogs, [detectiveBlogs])}
               />
             }
           />
           <Route
             path="service"
-            element={<ServicesPage data={useMemo(() => generalService, [])} />}
+            element={
+              <ServicesPage
+                data={useMemo(() => generalService, [generalService])}
+              />
+            }
           />
           <Route
             path="life"
@@ -118,4 +122,4 @@ function App() {
   );
 }
 
-export default App;
+export default memo(App);
