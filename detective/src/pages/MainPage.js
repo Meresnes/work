@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, memo } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import SubmitForm from '../components/SubmitForm';
 // import YandexMap from '../components/YandexMap';
@@ -35,7 +35,7 @@ export default function MainPage(props) {
     const serviceData = props.data
     const detectiveBlogsData = props.blogData
     const url = '/work/life/detective-blog/'
-
+    console.log('mainpage')
     // detectiveBlogsData.map(item => (
     //     <DetectiveLife key={item.slug} data={item} />
     // ))
