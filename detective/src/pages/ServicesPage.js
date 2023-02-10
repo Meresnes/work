@@ -1,8 +1,8 @@
-import React from "react";
+import React, { memo } from "react";
 import ServiceSection from "../components/CMSComponents/ServiceSection";
 import "../styles/ServicePage.css";
 
-export default function ServicesPage(props) {
+export default memo(function ServicesPage(props) {
   const servicePageData = React.useMemo(() => {
     return props.data;
   }, [props.data]);
@@ -34,4 +34,4 @@ export default function ServicesPage(props) {
         ))}
     </>
   );
-}
+});
