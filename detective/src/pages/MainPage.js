@@ -64,9 +64,15 @@ export default memo(function MainPage(props) {
 
         <div className="content-block">
           {serviceData &&
-            serviceData.map((item) => (
-              <ServiceComponents key={item.slug.current} data={item} />
-            ))}
+            serviceData
+              .map((item, index) => (
+                <ServiceComponents
+                  key={item.slug.current}
+                  data={item}
+                  index={index}
+                />
+              ))
+              .filter((item, index) => index < 4)}
         </div>
         <div className="button-block">
           <Button className="main-page-button" onClick={() => setOnShow(true)}>
@@ -108,6 +114,7 @@ export default memo(function MainPage(props) {
               className="video-player"
               src={"https://www.youtube.com/embed/jt2m440S3Uk"}
               title="YouTube video player"
+              loading="lazy"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen></iframe>
@@ -149,7 +156,7 @@ export default memo(function MainPage(props) {
                 результата.
               </div>
             </div>
-            <div className="achievement-block">
+            <div className="achievement-block" loading="lazy">
               <div className="icon">
                 <img
                   className="icon-block-img"
@@ -230,7 +237,7 @@ export default memo(function MainPage(props) {
         </div>
       </div>
 
-      <div className="life-block block">
+      <div className="life-block block" loading="lazy">
         <div className="title">Блог детектива</div>
 
         <Carousel className="carousel-block" variant="dark" interval={null}>

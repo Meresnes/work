@@ -17,7 +17,7 @@ export default memo(function YandexMap() {
 
   return (
     <>
-      <YMaps>
+      <YMaps loading="lazy">
         <Map
           width={"100%"}
           height={"300px"}

@@ -1,23 +1,22 @@
-.service-card{
+.service-card {
     position: relative;
     width: 400px;
     height: 210px !important;
-    overflow: hidden;  
+    overflow: hidden;
     cursor: pointer;
-    opacity: 0.90;
-    
+    opacity: 0.9;
 }
-.card-title-text{
+.card-title-text {
     font-size: 31px !important;
+
     font-weight: 700;
     text-shadow: 1px 1px 2px black;
     transition: all 0.6s;
-    
 }
-.service-image{
+.service-image {
     transition: all 0.6s;
 }
-.card-body-text{
+.card-body-text {
     text-shadow: 1px 1px 2px black;
     opacity: 0;
     font-size: 24px;
@@ -26,21 +25,21 @@
     position: absolute;
     top: 0;
 }
-.visible{
+.visible {
     opacity: 0.9;
 }
-.shadow{
+.shadow {
     opacity: 0.5;
 }
-.hide{
+.hide {
     /* transition: all 0.4s;
     display: none; */
     opacity: 0;
 }
 @media screen and (max-width: 700px) {
-    .service-card{
+    .service-card {
         overflow: hidden !important;
         width: 300px;
-    height: 150px !important;
+        height: 150px !important;
     }
 }
